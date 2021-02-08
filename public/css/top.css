@@ -1,0 +1,51 @@
+body {
+  overflow-x: hidden;
+　font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+}
+
+.navbar {
+  /* position: fixed; */
+  width: 100%;
+  /* height:10vh; */
+  /* background-color: black !important; */
+  /* box-shadow: 2px 2px 5px black; */
+  opacity: 1;
+
+  /* background: #40E0D0; */
+  /* background: none */
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* min-width: 100%;
+  min-height: 100%; */
+  background: url('../images/bg.png') no-repeat;
+  background-size: cover;
+  /* z-index: -1; */
+}
+
+.bg-whites {
+  /* background: rgba(255, 255, 255, .75); */
+  position: absolute;
+  top: 50%;
+  left:50%;
+  padding: 20px;
+}
+/* @media screen and (max-width: 500px) {
+  div{width:70%;}
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+} */
