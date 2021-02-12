@@ -46,12 +46,13 @@ class QuizController extends Controller
       $user = Auth::user();
       $user->count += 1;
       $user->save();
-      return view('/quiz/quiz_1_correct');
+      return view('/quiz/quiz_1_correct', compact('user'));
     }
 
     public function quiz_1_fail()
     {
-      return view('/quiz/quiz_1_fail');
+      $user = Auth::user();
+      return view('/quiz/quiz_1_fail', compact('user'));
     }
 
     public function quiz_2()

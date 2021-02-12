@@ -23,9 +23,11 @@
     <link href="{{ asset('css/countdown.css') }}" rel="stylesheet">
     <link href="{{ asset('css/application.css') }}" rel="stylesheet">
 </head>
-<body>
+<body  style="background-color:black; height:auto;">
     <div id="app">
        @yield('navbar.navbar')
+       @yield('navbar.top_nav')
+       @yield('navbar.head')
     </div>
     <main class="mb-5">
        @yield('content')

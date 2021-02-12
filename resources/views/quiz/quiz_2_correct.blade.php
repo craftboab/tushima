@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@include('navbar.navbar')
+@include('navbar.head')
 @include('footer')
 
 @section('content')
@@ -17,10 +17,10 @@
                     @endif
                     @if ($user->count2 === 1)
                     <div class="">
-                      <p>You got reward!</p>
+                      <p>Congratulation {{$user->name}} You got reward!</p>
                     </div>
                     <div class="justify-content-center">
-                      <button type="button" class="btn btn-primary m-4" style="width:30%;" onclick="location.href='/get_reward'">Get Reward</button>
+                      <button type="button" class="btn btn-primary m-4" style="width:30%;" onclick="location.href='/">Back to the Top page</button>
                     </div>
                     @else
                     <div class="">
