@@ -37,7 +37,7 @@
               <a class="nav-link nav_text" href="{{ url('/map') }}">Tushima Map</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav_text" href="{{ url('/') }}">Special Contents</a>
+              <a class="nav-link nav_text" href="{{ url('/special') }}">Special Contents</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav_text" href="{{ url('/quiz_select') }}">Quiz</a>

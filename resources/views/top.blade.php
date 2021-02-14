@@ -56,7 +56,7 @@
                   <a class="nav-link nav_text" href="{{ url('/map') }}">Tushima Map</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav_text" href="{{ url('/') }}">Special Contents</a>
+                  <a class="nav-link nav_text" href="{{ url('/special') }}">Special Contents</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav_text" href="{{ url('/quiz_select') }}">Quiz</a>
@@ -92,7 +92,7 @@
 
 
   <div id="movie-contents">
-    <video id="video" src="video/Top_m_kari.mp4" controls type="video/mp4"></video>
+    <video id="video" src="video/Top_m_kari.mp4" poster="/images/boab.jpg" controls></video>
     <div class="">
       <img src="/video/Links/Logo_kari.png" class="mb-5 pb-5" alt="">
     </div>
@@ -105,12 +105,13 @@
       @endguest
     </div>
   </div>
+
   <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:5%;">
       <div class="container">
         <div class="d-flex align-items-center justify-content-center">
           <div class="img-flex-2">
-          	<video id="video" src="video/Top_m_kari.mp4" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
-          	<video id="video" src="video/Top_m_kari.mp4" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
+          	<video id="video" src="video/Top_m_kari.mp4" poster="/images/boab.jpg" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
+          	<video id="video" src="video/Top_m_kari.mp4" poster="/images/boab.jpg" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
           </div>
         </div>
       </div>
@@ -124,11 +125,13 @@
   </div>
 
 
-  <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:10%;">
+  <div class="p-3 p-sm-5 text-center justify-content-center" style="margin-top:10%;">
       <div class="container">
-        <div class="img-flex-3">
-          <img src="/video/Links/和多都美神社3（リアル）.jpg" width="60%" height="20%" class="mr-3 my-3" alt="">
-          <img src="/video/Links/和多都美神社3（リアル）.jpg" width="60%" height="20%" class="mr-3 my-3" alt="">
+        <div class="wrapp">
+          <!-- <div class=""> -->
+            <img src="/video/Links/和多都美神社3（リアル）.jpg" style="width:50% !important; height:20% !important;" class="mr-3 my-3" alt="">
+            <img src="/video/Links/和多都美神社3（リアル）.jpg" style="width:50% !important; height:20% !important;" class="mr-3 my-3" alt="">
+          <!-- </div> -->
         </div>
       </div>
   </div>

@@ -46,10 +46,12 @@ Route::group(['middleware' => 'auth:user'], function() {
     Route::get('/quiz_2_correct', 'QuizController@quiz_2_correct');
     Route::get('/quiz_2_fail', 'QuizController@quiz_2_fail');
 
-    
+
 
     Route::get('/map', function(){
       return view('map'); });
+    Route::get('/special', function(){
+      return view('special'); });
 });
 
 /*

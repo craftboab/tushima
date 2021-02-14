@@ -22,11 +22,11 @@
 
 <div class="">
 
-  <div class="jumbotron bg-dark" style="height: 600px">
+  <div class="" style="height: 600px">
     <div class="">
 
       <div class="container-fruid">
-        <div id="quetion_count" class="alert alert-primary"></div>
+        <div id="quetion_count" class="text-center display-6 text-white"></div>
       </div>
       <div class="container-fruid">
         <div id="js-question" class="alert alert-primary" role="alert"></div>
@@ -34,9 +34,19 @@
 
       <div class="container">
         <div>
-          <img src="" class="d-block mx-auto" id='quiz_image' style="width: 18rem;" alt="">
+          <div class="mt-5">
+            <div style="text-align:center;">
+            	<video id="quiz_image" src="" alt="" class="mx-3" width="55%" height="50%" controls type="video/mp4"></video>
+            </div>
+          </div>
         </div>
       </div>
+<!--
+      <div class="container">
+        <div>
+          <img src="" class="d-block mx-auto" id='quiz_image' style="width: 18rem;" alt="">
+        </div>
+      </div> -->
 
       <div class="container mt-5">
         <div id="js-items" class="d-flex justify-content-center">

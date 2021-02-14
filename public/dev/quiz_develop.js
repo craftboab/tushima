@@ -8,17 +8,17 @@ let popup = document.getElementById('js-popup');
 let popup_timeover = document.getElementById('js-popup1');
 
 
-// window.onload = function() {
-//   start_quiz.classList.add('is-show');
-//   closePopUp(blackBg);
-//
-//   function closePopUp() {
-//     start_quiz.addEventListener('click', function() {
-//       count_start();
-//       start_quiz.classList.remove('is-show');
-//     })
-//   }
-// }
+window.onload = function() {
+  start_quiz.classList.add('is-show');
+  closePopUp(blackBg);
+
+  function closePopUp() {
+    start_quiz.addEventListener('click', function() {
+      count_start();
+      start_quiz.classList.remove('is-show');
+    })
+  }
+}
 
 
 
@@ -26,38 +26,48 @@ const quiz = [
   {
     count: 'quietion1',
     question: '岡田',
-    image: 'video/Top_m_kari.mp4',
-    image_alt: 'quiz_image',
+    movie: 'video/Top_m_kari.mp4',
+    movie_alt: 'movie1',
+    image: '',
+    image_alt: '',
     answers: [ 'アンディ', 'としお', 'かつあき', 'たけお'],
     correct: 'としお'
   }, {
     count: 'quietion2',
     question: '野間',
-    image: 'video/Top_m_kari.mp4',
-    image_alt: 'quiz_image',
+    movie: '',
+    movie_alt: '',
+    image: 'images/order_pic.jpg',
+    image_alt: 'pic',
     answers: [ 'アンディ', 'としお', 'かつあき', 'たけお'],
     correct: 'かつあき'
   }, {
     count: 'quietion3',
     question: 'ラム',
-    image: '',
-    image_alt: '',
+    movie: '',
+    movie_alt: '',
+    image: 'images/order_pic.jpg',
+    image_alt: 'pic2',
     answers: [ 'アンディ', 'としお', 'katus', 'たけお'],
     correct: 'アンディ'
   }, {
     count: 'quietion4',
     question: 'mario',
+    movie: '',
+    movie_alt: '',
     image: 'images/order_pic.jpg',
-    image_alt: 'quiz_image',
+    image_alt: 'pic3',
     answers: [ 'アンディ', 'garcia', 'かつあき', 'たけお'],
-    correct: 'としお'
+    correct: 'garcia'
   }, {
     count: 'quietion5',
     question: 'lam',
-    image: 'video/Top_m_kari.mp4',
-    image_alt: 'quiz_image',
+    movie: 'video/Top_m_kari.mp4',
+    movie_alt: 'movie2',
+    image: '',
+    image_alt: '',
     answers: [ 'アンディ', 'willson', 'かつあき', 'たけお'],
-    correct: 'かつあき'
+    correct: 'willson'
   }
 ];
 
@@ -70,18 +80,28 @@ const $count = $doc.getElementById('quetion_count');
 const $question = $doc.getElementById('js-question');
 // 問題画像
 const $quiz_image = $doc.getElementById('quiz_image');
+const $quiz_movie = $doc.getElementById('quiz_movie');
 // 問題回答
 const $buttons = $doc.querySelectorAll('.boab');
+// 地図
+// const $panel_map = $doc.querySelectorAll('.panel');
 
 const quizLen = quiz.length;
 let quizCount = 0;
 let score = 0;
 
 const init = () => {
-  $count.textContent = quiz[quizCount].count;
-  $question.textContent = quiz[quizCount].question;
-  $quiz_image.src = quiz[quizCount].image;
-  $quiz_image.alt = quiz[quizCount].image_alt;
+  // $count.textContent = quiz[quizCount].count;
+  // $question.textContent = quiz[quizCount].question;
+  //
+  // if(quiz[quizCount].movie){
+      // $quiz_movie.src = quiz[quizCount].movie;
+      // $quiz_movie.alt = quiz[quizCount].movie_alt;
+  // }else{
+      $quiz_image.src = quiz[quizCount].image;
+      $quiz_image.alt = quiz[quizCount].image_alt;
+  }
+
   // $panel_map.src = quiz[quizCount].panel_img;
   // $panel_map.alt = quiz[quizCount].panel_alt;
   const buttonLen = $buttons.length;
