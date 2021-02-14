@@ -90,13 +90,89 @@
       </div>
     </nav>
 
+  <!-- <nav class="navbar navbar-expand-lg p-4 navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ url('/')}}">
+        <img src="/video/Links/Logo_kari.png" alt="" width="300" height="40" class="d-inline-block align-top">
+      </a>
+      <div class="content-right">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            @guest
+              <li class="nav-item">
+                <a class="nav-link nav-color" href="{{ route('login') }}">Tushima Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">Special Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">Special Content</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+              </li>
+            @if (Route::has('register'))
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+              </li>
+            @endif
+            @else
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('/map') }}">Tushima Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('/') }}">Special Contents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('/') }}">Special Content</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('/quiz_select') }}">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('/') }}">About us</a>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link">
+                    {{ Auth::user()->name }} <span class="caret"></span>
+                </p>
+              </li>
+
+              <li class="nav-item">
+                <div>
+                <a class="nav-link" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+              </div>
+              </li>
+            @endguest
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav> -->
 
   <div id="movie-contents">
     <video id="video" src="video/Top_m_kari.mp4" controls type="video/mp4"></video>
     <div class="">
       <img src="/video/Links/Logo_kari.png" class="mb-5 pb-5" alt="">
     </div>
-
+    <!-- <img src="/video/Links/story_btn.png" class="mt-5 pt-5" alt=""> -->
     <div class="movie_btn">
       @guest
         <a class="navbar-brand btn btn-secondary" href="{{ route('login') }}">Quiz</a>
@@ -105,8 +181,28 @@
       @endguest
     </div>
   </div>
+
+
+
+  <!-- <video class="" controls>
+    <source src="video/Top_m_kari.mp4" class="relative" type="video/mp4">
+  </video>
+  <div class="bg-whites">
+    @guest
+    <a class="navbar-brand" href="{{ route('login') }}">
+      <img src="/video/Links/story_btn.png" alt="" width="60%" height="20%" class="d-inline-block align-top">
+    </a>
+    @else
+    <a class="navbar-brand" href="/quiz_select">
+      <img src="/video/Links/story_btn.png" alt="" width="60%" height="20%" class="d-inline-block align-top">
+    </a>
+  @endguest
+  </div> -->
+
   <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:5%;">
       <div class="container">
+        <!-- <h1 class="display-2 mt-5 pt-5 text-white" style="font-family: sans-serif; opacity:0.6;">Ghost of Tushima</h1>
+        <p class="text-white">HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1</p> -->
         <div class="d-flex align-items-center justify-content-center">
           <div class="img-flex-2">
           	<video id="video" src="video/Top_m_kari.mp4" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
@@ -123,15 +219,6 @@
       </div>
   </div>
 
-
-  <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:10%;">
-      <div class="container">
-        <div class="img-flex-3">
-          <img src="/video/Links/和多都美神社3（リアル）.jpg" width="60%" height="20%" class="mr-3 my-3" alt="">
-          <img src="/video/Links/和多都美神社3（リアル）.jpg" width="60%" height="20%" class="mr-3 my-3" alt="">
-        </div>
-      </div>
-  </div>
 
 
   <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:10%;">

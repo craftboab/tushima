@@ -1,3 +1,20 @@
+html{
+height:100%;
+}
+body{
+margin: 0;
+padding: 0;
+height:100%;
+}
+body > .box {
+height: auto;
+}
+.box{
+background: url('/video/Links/AdobeStock_394032506_web.jpg');
+height:100%;
+min-height:100%;
+}
+
 .nav_text {
   color: white !important;
   font-size: 15px;
