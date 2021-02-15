@@ -11,33 +11,33 @@ let popup_timeover = document.getElementById('js-popup1');
 
 const quiz = [
   {
-    count: 'quetion1',
-    question: '誉れを言った人気者',
-    image: 'video/Top_m_kari.mp4',
+    count: 'video/img_s/q1.png',
+    // question: '誉れを言った人気者',
+    image: 'video/clip/Top_m_kari.mp4',
     image_alt: 'quiz_image',
-    answers: [ '境井仁', '亀', 'かつあき', '花田勝'],
-    correct: '境井仁'
+    answers: [ 'A','B','C','D'],
+    correct: 'A'
   }, {
-    count: 'quetion2',
-    question: '１＋１＝',
-    image: 'video/Top_m_kari.mp4',
+    count: 'video/img_s/q1.png',
+    // question: '１＋１＝',
+    image: 'video/clip/Top_m_kari.mp4',
     image_alt: 'quiz_image',
-    answers: [ 'アンディ', '2', 'かつあき', 'たけお'],
-    correct: '2'
+    answers: [ 'A','B','C','D'],
+    correct: 'A'
   }, {
-    count: 'quetion3',
-    question: '２＋４＝',
-    image: '',
-    image_alt: '',
-    answers: [ '6', 'としお', 'katus', 'たけお'],
-    correct: '6'
-  }, {
-    count: 'quetion4',
-    question: '５＋５＝',
-    image: 'video/Top_m_kari.mp4',
+    count: 'video/img_s/q1.png',
+    // question: '２＋４＝',
+    image: 'video/clip/Top_m_kari.mp4',
     image_alt: 'quiz_image',
-    answers: [ '10', 'garcia', 'かつあき', 'たけお'],
-    correct: '10'
+    answers: [ 'A','B','C','D'],
+    correct: 'A'
+  }, {
+    count: 'video/img_s/q1.png',
+    // question: '５＋５＝',
+    image: 'video/clip/Top_m_kari.mp4',
+    image_alt: 'quiz_image',
+    answers: [ 'A','B','C','D'],
+    correct: 'A'
   }
 ];
 
@@ -47,7 +47,7 @@ const $doc = document;
 //問題番号
 const $count = $doc.getElementById('quetion_count');
 // 問題文
-const $question = $doc.getElementById('js-question');
+// const $question = $doc.getElementById('js-question');
 // 問題画像
 const $quiz_image = $doc.getElementById('quiz_image');
 // 問題回答
@@ -60,8 +60,8 @@ let quizCount = 0;
 let score = 0;
 
 const init = () => {
-  $count.textContent = quiz[quizCount].count;
-  $question.textContent = quiz[quizCount].question;
+  $count.src = quiz[quizCount].count;
+  // $question.textContent = quiz[quizCount].question;
   $quiz_image.src = quiz[quizCount].image;
   $quiz_image.alt = quiz[quizCount].image_alt;
   // $panel_map.src = quiz[quizCount].panel_img;
@@ -111,7 +111,7 @@ function change_fail(){
 const showEnd = () => {
   document.getElementById('result').textContent = '終了！あなたのスコアは' + score + '/' + quizLen + 'です';
   // judgement();
-  if(score > 2){
+  if(score > 3){
     change_correct();
    }else{
     change_fail();

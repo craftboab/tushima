@@ -3,7 +3,7 @@
 <nav class="">
   <div class="container-fluid navbar navbar-expand-lg p-4 navbar-dark mr-5" style="background-color: black;">
     <a class="navbar-brand" href="{{ url('/')}}">
-      <img src="/video/Links/Logo_kari.png" alt="" width="300" height="40" class="d-inline-block align-top">
+      <img src="/video/img_s/Logo_kari.png" alt="" width="50%" height="20%" class="d-inline-block align-top">
     </a>
     <div class="content-right">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -18,25 +18,18 @@
   <div class="black-background" id="js-black-bg1"></div>
 </div>
 
-
-
-<div class="">
-
-  <div class="" style="height: 600px">
-    <div class="">
-
+<div class="" style="height: 800px">
       <div class="container-fruid">
-        <div id="quetion_count" class="text-center display-6 text-white"></div>
-      </div>
-      <div class="container-fruid">
-        <div id="js-question" class="alert alert-primary" role="alert"></div>
+        <div class="text-center">
+          <img src="" id="quetion_count" class="mt-5" style="width:15%; height:5%;" alt="count quetion">
+        </div>
       </div>
 
       <div class="container">
         <div>
           <div class="mt-5">
             <div style="text-align:center;">
-            	<video id="quiz_image" src="" alt="" class="mx-3" width="55%" height="50%" controls type="video/mp4"></video>
+            	<video id="quiz_image" poster="video/img_l/top_img.png" src="" alt="" class="mx-3" width="55%" height="50%" controls type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -50,30 +43,24 @@
 
       <div class="container mt-5">
         <div id="js-items" class="d-flex justify-content-center">
-          <div class="row">
+          <div class="btn-group-vertical" role="group" aria-label="ボタングループサンプル">
             <div class="m-2">
-              <button type="button" id="" class="btn btn-primary boab">Primary</button>
+              <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
             </div>
             <div class="m-2">
-              <button type="button" id="" class="btn btn-primary boab">Primary</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="m-2">
-              <button type="button" id="" class="btn btn-primary boab">Primary</button>
+              <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
             </div>
             <div class="m-2">
-              <button type="button" id="" class="btn btn-primary boab">Primary</button>
+              <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
+            </div>
+            <div class="m-2">
+              <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
             </div>
           </div>
+
         </div>
       </div>
-
-    </div>
   </div>
-
-
-</div>
 
 </body>
 

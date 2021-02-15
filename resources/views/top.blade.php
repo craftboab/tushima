@@ -22,7 +22,7 @@
     <nav class="">
       <div class="container-fluid navbar navbar-expand-lg p-4 navbar-dark mr-5" style="background-color: black;">
         <a class="navbar-brand" href="{{ url('/')}}">
-          <img src="/video/Links/Logo_kari.png" alt="" width="300" height="40" class="d-inline-block align-top">
+          <img src="/video/img_s/Logo_kari.png" alt="" width="50%" height="20%" class="d-inline-block align-top">
         </a>
         <div class="content-right">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,57 +92,76 @@
 
 
   <div id="movie-contents">
-    <video id="video" src="video/Top_m_kari.mp4" poster="/images/boab.jpg" controls></video>
+    <video id="video" src="video/clip/Top_m_kari.mp4" poster="video/img_l/top_img.png" controls></video>
     <div class="">
-      <img src="/video/Links/Logo_kari.png" class="mb-5 pb-5" alt="">
+      @guest
+      <a href="{{ route('login') }}">
+        <img src="/video/img_s/tushima_logo.png" class="mb-5 pb-5" alt="">
+      </a>
+      @else
+      <a href="/quiz_select">
+        <img src="/video/img_s/tushima_logo.png" class="mb-5 pb-5" alt="">
+      </a>
+      @endguest
     </div>
 
-    <div class="movie_btn">
+    <!-- <div class="movie_btn">
       @guest
         <a class="navbar-brand btn btn-secondary" href="{{ route('login') }}">Quiz</a>
       @else
         <a class="navbar-brand btn btn-secondary" href="/quiz_select">Quiz</a>
       @endguest
-    </div>
+    </div> -->
   </div>
 
   <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:5%;">
       <div class="container">
         <div class="d-flex align-items-center justify-content-center">
           <div class="img-flex-2">
-          	<video id="video" src="video/Top_m_kari.mp4" poster="/images/boab.jpg" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
-          	<video id="video" src="video/Top_m_kari.mp4" poster="/images/boab.jpg" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
+          	<video id="video" src="video/clip/Top_m_kari.mp4" poster="video/img_l/top_img.png" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
+          	<video id="video" src="video/clip/Top_m_kari.mp4" poster="video/img_l/top_img.png" class="mx-3" width="45%" height="25%" controls type="video/mp4"></video>
           </div>
         </div>
       </div>
   </div>
 
-  <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:10%;">
+  <div class="text-center" style="width:100%; height:auto; margin-top:10%;">
       <div class="container text-white">
-        <h2 class="">About Tushima</h2>
-        <h5>対馬（つしま）または対馬島（つしまとう、英語：Tsushima Island）は、日本の九州の北方の玄界灘にある、長崎県（ながさきけん）に属する島で、島全域が対馬市の1島1市体制である。面積は日本第10位である。島内人口は3万470人で ..</h5>
+        <div class="text-center">
+          <img src="video/img_s/about_tushima.png" style="width:60%;" alt="">
+        </div>
+        <h5 style="padding-left:10%; padding-right:10%;">GHOST OF TSUSHIMA unfolds in Tsushima, in the Genkai Sea in northern Kyushu, Japan.
+The island is part of Nagasaki Prefecture and boasts abundant nature with 89% of the terrain covered in mountains and forests.
+With most of East Asia just a stone’s throw away,
+it has also set the stage numerous historical events, including the Mongol invasions of Japan.</h5>
       </div>
   </div>
 
 
-  <div class="p-3 p-sm-5 text-center justify-content-center" style="margin-top:10%;">
+  <div class="text-center justify-content-center" style="margin-top:2%;">
       <div class="container">
         <div class="wrapp">
           <!-- <div class=""> -->
-            <img src="/video/Links/和多都美神社3（リアル）.jpg" style="width:50% !important; height:20% !important;" class="mr-3 my-3" alt="">
-            <img src="/video/Links/和多都美神社3（リアル）.jpg" style="width:50% !important; height:20% !important;" class="mr-3 my-3" alt="">
+            <img src="/video/img_l/spot_detail3_after_pc.png" style="width:80% !important; height:0% !important;" class="mr-3 my-3" alt="">
+            <img src="/video/img_l/spot_detail2_after_pc.png" style="width:80% !important; height:0% !important;" class="mr-3 my-3" alt="">
           <!-- </div> -->
         </div>
       </div>
   </div>
 
 
-  <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:10%;">
+  <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto;">
       <div class="container">
         <div class="img-flex-3">
-          <img src="/video/Links/banner1.png" width="250" height="80" class="mr-3 my-3" alt="">
-          <img src="/video/Links/banner2.png" width="250" height="80" class="mx-3 my-3" alt="">
-          <img src="/video/Links/banner3.png" width="250" height="80" class="ml-3 my-3" alt="">
+          <a href="https://www.tsushima-net.org">
+            <img src="/video/banner/banner1.png" width="250" height="80" class="mr-3 my-3" alt="">
+          </a>
+          <a href="https://www.nagasaki-tabinet.com">
+            <img src="/video/banner/banner2.png" width="250" height="80" class="mx-3 my-3" alt="">
+          </a>
+          <a href="https://www.playstation.com/en-us/games/ghost-of-tsushima/">
+            <img src="/video/banner/banner3.png" width="250" height="80" class="ml-3 my-3" alt="">
+          </a>
         </div>
       </div>
   </div>
