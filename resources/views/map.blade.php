@@ -7,7 +7,7 @@
   <div class="row">
     <div class="col-sm">
       <div class="">
-        <img src="video/img_s/map01.png" class="d-block mx-auto" usemap="#image-map">
+        <img src="video/img_s/map01.png" style="width:100%; height:auto;" class="d-block mx-auto" usemap="#image-map">
       </div>
         <map name="image-map">
             <area target="" alt="" title="" href="javascript:map_function1();" class="map_point1" coords="180,235,31" shape="circle">

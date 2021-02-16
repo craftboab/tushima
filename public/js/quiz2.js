@@ -18,21 +18,21 @@ const quiz = [
     answers: [ 'A','B','C','D'],
     correct: 'A'
   }, {
-    count: 'video/img_s/q1.png',
+    count: 'video/img_s/q2.png',
     // question: '１＋１＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C','D'],
     correct: 'A'
   }, {
-    count: 'video/img_s/q1.png',
+    count: 'video/img_s/q3.png',
     // question: '２＋４＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C','D'],
     correct: 'A'
   }, {
-    count: 'video/img_s/q1.png',
+    count: 'video/img_s/q4.png',
     // question: '５＋５＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_alt: 'quiz_image',

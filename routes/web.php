@@ -52,6 +52,8 @@ Route::group(['middleware' => 'auth:user'], function() {
       return view('map'); });
     Route::get('/special', function(){
       return view('special'); });
+    Route::get('/about', function(){
+      return view('about'); });
 });
 
 /*
