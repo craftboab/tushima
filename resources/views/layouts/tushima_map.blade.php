@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/application.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/map.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="map_box">
