@@ -11,30 +11,42 @@ let popup_timeover = document.getElementById('js-popup1');
 
 const quiz = [
   {
-    count: 'video/img_s/q1.png',
+    count: 'video/quiz/BATTLE_ao_01.png',
     // question: '誉れを言った人気者',
     image: 'video/clip/Top_m_kari.mp4',
+    image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C','D'],
     correct: 'A'
   }, {
-    count: 'video/img_s/q2.png',
+    count: 'video/quiz/BATTLE_ao_02.png',
     // question: '１＋１＝',
     image: 'video/clip/Top_m_kari.mp4',
+    image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C','D'],
     correct: 'A'
   }, {
-    count: 'video/img_s/q3.png',
+    count: 'video/quiz/BATTLE_ao_03.png',
     // question: '２＋４＝',
     image: 'video/clip/Top_m_kari.mp4',
+    image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C','D'],
     correct: 'A'
   }, {
-    count: 'video/img_s/q4.png',
+    count: 'video/quiz/BATTLE_ao_04.png',
     // question: '５＋５＝',
     image: 'video/clip/Top_m_kari.mp4',
+    image_sub: 'video/clip/top_sample.png',
+    image_alt: 'quiz_image',
+    answers: [ 'A','B','C','D'],
+    correct: 'A'
+  }, {
+    count: 'video/quiz/BATTLE_ao_05.png',
+    // question: '５＋５＝',
+    image: 'video/clip/Top_m_kari.mp4',
+    image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C','D'],
     correct: 'A'
@@ -64,6 +76,7 @@ const init = () => {
   // $question.textContent = quiz[quizCount].question;
   $quiz_image.src = quiz[quizCount].image;
   $quiz_image.alt = quiz[quizCount].image_alt;
+  $quiz_image.poster = quiz[quizCount].image_sub;
   // $panel_map.src = quiz[quizCount].panel_img;
   // $panel_map.alt = quiz[quizCount].panel_alt;
   const buttonLen = $buttons.length;

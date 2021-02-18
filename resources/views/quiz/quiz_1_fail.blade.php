@@ -3,25 +3,20 @@
 @include('footer')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8 mt-5">
-                <div class="display-4 text-white text-center">Game Over</div>
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    <div class="">
-                      <img src="video/img_l/quiz_fail.jpg" style="width:350px; height:600;" class="d-block mx-auto" alt="ポップアップ画像">
-                    </div>
-                    <div class="text-center">
-                      <button type="button" class="btn btn-secondary mt-5" onclick="location.href='/quiz_select'">Try Again</button>
-                    </div>
-            <div class="py-5 text-center">
-              <button type="button" class="btn btn-secondary" onclick="location.href='/'">Back to top page</button>
-            </div>
-        </div>
+@if (session('status'))
+    <div class="alert alert-success" role="alert">
+        {{ session('status') }}
     </div>
+@endif
+
+<div class="text-image">
+  <img src="video/quiz/BATTLE_Gauge_0.jpg" style="width:100%; height:auto;" alt="fail_quiz">
+</div>
+<div class="text-right">
+  <div class="">
+    <button type="button" class="btn btn-danger m-4" onclick="location.href='quiz_select'">Try Again</button>
+
+    <button type="button" class="btn btn-danger m-4" onclick="location.href='/'">Back to the Top page</button>
+  </div>
 </div>
 @endsection

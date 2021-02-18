@@ -9,7 +9,7 @@
 <div class="popup" id="js-popup">
   <div class="popup-inner">
     <h1>Finish</h1>
-    <img src="images/tushima_timeover.jpg" alt="ポップアップ画像">
+    <!-- <img src="images/tushima_timeover.jpg" alt="ポップアップ画像"> -->
     <div id="result" class="alert alert-primary mt-5" role="alert"></div>
     <div class="text-center">
       <a id="congrat" class="btn btn-primary" href="" style="color:white;" role="alert"></a>
@@ -29,7 +29,7 @@
         <div>
           <div class="mt-5">
             <div style="text-align:center;">
-            	<video id="quiz_image" poster="video/img_l/top_img.png" src="" alt="" class="mx-3" width="55%" height="50%" controls type="video/mp4"></video>
+            	<video id="quiz_image" poster="" src="" alt="" class="mx-3" width="55%" height="50%" controls type="video/mp4"></video>
             </div>
           </div>
         </div>

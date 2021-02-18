@@ -22,7 +22,10 @@
               <a class="nav-link nav_text" href="{{ route('login') }}">Quiz</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link nav_text" href="#about">About Tushima</a>
+              <a class="nav-link nav_text" href="{{ route('login') }}">About Tushima</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link nav_text" href="{{ route('login') }}">Q&A</a>
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link nav_text" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -44,6 +47,9 @@
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link nav_text" href="{{ url('/about') }}">About Tushima</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link nav_text" href="{{ url('/qanda') }}">Q&A</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

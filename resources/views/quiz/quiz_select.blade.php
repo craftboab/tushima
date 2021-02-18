@@ -5,22 +5,22 @@
 @section('content')
 <div class="container">
   <div class="row justify-content-center">
-    <div class="p-3 p-sm-5 text-center justify-content-center" style="margin-top:10%;">
+    <div class="p-3 p-sm-5 text-center justify-content-center">
         <div class="container">
           <div class="display-4 text-center">
-            Quiz
+            <img src="video/quiz/BATTLE_TITLE_03.png" style="width:80% !important; height:auto !important;" class="mr-3 my-3" alt="">
           </div>
           <div class="justify-content-center">
               <a href="{{ url('/quiz_1') }}" class="mr-2">
-                <img src="video/img_s/Level1.png" style="width:45% !important; height:18% !important;" class="mr-3 my-3" alt="">
+                <img src="video/quiz/BATTLE_TITLE_01.png" style="width:35% !important; height:auto !important;" class="mr-3 my-3" alt="">
               </a>
               @if($user->count === 0)
                 <a href="" class="ml-2">
-                  <img src="video/img_s/Level2-2.png" style="width:45% !important; height:18% !important;" class="mr-3 my-3" alt="">
+                  <img src="video/quiz/BATTLE_TITLE_02_2.png" style="width:35% !important; height:auto !important;" class="mr-3 my-3" alt="">
                 </a>
               @else
                 <a href="{{ url('/quiz_2') }}" class="ml-2">
-                  <img src="video/img_s/Level2.png" style="width:45% !important; height:18% !important;" class="mr-3 my-3" alt="">
+                  <img src="video/quiz/BATTLE_TITLE_02.png" style="width:35% !important; height:auto !important;" class="mr-3 my-3" alt="">
                 </a>
               @endif
           </div>

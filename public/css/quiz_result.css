@@ -1,0 +1,16 @@
+.text-image {
+  position: relative;
+  width: 100px;
+}
+
+.text-image img {
+  width: 100%;
+}
+
+.text-image h4 {
+  position: absolute;
+  top: 25%;
+  left: 39%;
+  font-size: 610px;
+  color: #ffffff;
+}

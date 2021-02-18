@@ -6,7 +6,7 @@
 
 <div class="">
   <div class="video-container">
-    <video class="clip" src="video/clip/top_sample.mp4" poster="video/clip/top_sample.png" controls autoplay muted></video>
+    <video class="clip" src="video/clip/top_sample.mp4" poster="video/clip/top_sample.png" controls autoplay muted type="video/mp4"></video>
     <div class="callout">
       @guest
       <a href="{{ route('login') }}">
@@ -26,8 +26,8 @@
       <div class="container">
         <div class="d-flex align-items-center justify-content-center">
           <div class="img-flex-2">
-            <video id="video" src="video/clip/Top_m_kari.mp4" poster="video/clip/top_img.png" class="mx-3" width="400px" height="300px" controls type="video/mp4"></video>
-            <video id="video" src="video/clip/top_sample.mp4" poster="video/clip/top_img.png" class="mx-3" width="400px" height="300px" controls type="video/mp4"></video>
+            <video id="video" src="video/clip/Top_m_kari.mp4" poster="video/clip/top_img.png" class="mx-3" style="width:500px !important; height:300px !important;" controls type="video/mp4"></video>
+            <video id="video" src="video/clip/top_sample.mp4" poster="video/clip/top_img.png" class="mx-3" style="width:500px !important; height:300px !important;" controls type="video/mp4"></video>
           </div>
         </div>
       </div>
@@ -47,29 +47,27 @@ it has also set the stage numerous historical events, including the Mongol invas
 </div> -->
 
 
-<div class="text-center justify-content-center" style="margin-top:2%;">
+<!-- <div class="text-center justify-content-center" style="margin-top:2%;">
     <div class="container">
       <div class="wrapp">
-        <!-- <div class=""> -->
           <img src="/video/img_l/spot_detail3_after_pc.png" style="width:80% !important; height:0% !important;" class="mr-3 my-3" alt="">
           <img src="/video/img_l/spot_detail2_after_pc.png" style="width:80% !important; height:0% !important;" class="mr-3 my-3" alt="">
-        <!-- </div> -->
       </div>
     </div>
-</div>
+</div> -->
 
 
 <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto;">
     <div class="container">
       <div class="img-flex-3">
         <a href="https://www.tsushima-net.org">
-          <img src="/video/banner/banner1.png" width="250" height="80" class="mr-3 my-3" alt="">
+          <img src="/video/banner/banner1.png" width="250" height="80" class="my-3" alt="">
         </a>
         <a href="https://www.nagasaki-tabinet.com">
           <img src="/video/banner/banner2.png" width="250" height="80" class="mx-3 my-3" alt="">
         </a>
         <a href="https://www.playstation.com/en-us/games/ghost-of-tsushima/">
-          <img src="/video/banner/banner3.png" width="250" height="80" class="ml-3 my-3" alt="">
+          <img src="/video/banner/banner3.png" width="250" height="80" class="my-3" alt="">
         </a>
       </div>
     </div>
