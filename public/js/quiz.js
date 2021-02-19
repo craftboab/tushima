@@ -13,10 +13,10 @@ const quiz = [
   {
     count: 'video/quiz/BATTLE_aka_01.png',
     // question: '岡田',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/clip/Question_01_sample.mp4',
+    image_sub: 'video/clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_aka_02.png',
@@ -24,7 +24,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_aka_03.png',
@@ -32,7 +32,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: '',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_aka_04.png',
@@ -40,7 +40,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_aka_05.png',
@@ -48,7 +48,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_img.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }
 ];

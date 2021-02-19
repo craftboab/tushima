@@ -3,11 +3,21 @@
 @include('footer')
 
 @section('content')
-
+<div class="container-fruid">
+  <div class="" style="height:60px; background-color:rgb(103, 51, 65);">
+    <div class="d-flex align-items-center justify-content-center" style="height:100%;">
+      @guest
+      <a class="btn btn-secondary" href="{{ route('login') }}">get reward</a>
+      @else
+      <a class="btn btn-secondary" href="/quiz_select">get reward</a>
+      @endguest
+    </div>
+  </div>
+</div>
 <div class="">
   <div class="video-container">
-    <video class="clip" src="video/clip/top_sample.mp4" poster="video/clip/top_sample.png" controls autoplay muted type="video/mp4"></video>
-    <div class="callout">
+    <video class="clip" src="video/clip/top_sample.mp4" poster="video/clip/top_sample.png" controls autoplay muted loop playsinline type="video/mp4"></video>
+    <!-- <div class="callout">
       @guest
       <a href="{{ route('login') }}">
         <img src="/video/img_s/tushima_logo.png" class="logo mb-5 pb-5" alt="">
@@ -17,21 +27,22 @@
         <img src="/video/img_s/tushima_logo.png" class="logo mb-5 pb-5" alt="">
       </a>
       @endguest
-    </div>
+    </div> -->
   </div>
 </div>
 
 
-  <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:5%;">
+
+  <!-- <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto; margin-top:5%;">
       <div class="container">
         <div class="d-flex align-items-center justify-content-center">
           <div class="img-flex-2">
-            <video id="video" src="video/clip/Top_m_kari.mp4" poster="video/clip/top_img.png" class="mx-3" style="width:500px !important; height:300px !important;" controls type="video/mp4"></video>
-            <video id="video" src="video/clip/top_sample.mp4" poster="video/clip/top_img.png" class="mx-3" style="width:500px !important; height:300px !important;" controls type="video/mp4"></video>
+            <video id="video" src="video/clip/Top_m_kari.mp4" poster="video/clip/top_img.png" class="mx-3" style="width:500px !important; height:300px !important;" controls playsinline type="video/mp4"></video>
+            <video id="video" src="video/clip/top_sample.mp4" poster="video/clip/top_img.png" class="mx-3" style="width:500px !important; height:300px !important;" controls playsinline type="video/mp4"></video>
           </div>
         </div>
       </div>
-  </div>
+  </div> -->
 
 
 <!-- <div class="text-center" id="about" style="width:100%; height:auto; margin-top:10%;">
@@ -57,7 +68,7 @@ it has also set the stage numerous historical events, including the Mongol invas
 </div> -->
 
 
-<div class="p-3 p-sm-5 text-center" style="width:100%; height:auto;">
+<!-- <div class="p-3 p-sm-5 text-center" style="width:100%; height:auto;">
     <div class="container">
       <div class="img-flex-3">
         <a href="https://www.tsushima-net.org">
@@ -71,7 +82,7 @@ it has also set the stage numerous historical events, including the Mongol invas
         </a>
       </div>
     </div>
-</div>
+</div> -->
 
 
 @endsection

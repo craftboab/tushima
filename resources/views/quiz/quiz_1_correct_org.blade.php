@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.quiz')
 @include('navbar.head')
 @include('footer')
 

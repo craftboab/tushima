@@ -2,8 +2,8 @@
 
 <nav class="">
   <div class="container-fluid navbar navbar-expand-lg navbar-dark" style="background-color: black;">
-    <a class="navbar-brand" style="width:60%; height:auto;" href="{{ url('/')}}">
-      <img src="/video/img_s/Logo_kari.png" alt="" width="25%" height="10%" class="d-inline-block align-top">
+    <a class="navbar-brand" style="width:20%; height:auto;" href="{{ url('/')}}">
+      <img src="/video/img_s/Logo_kari.png" alt="" width="80%" height="10%" class="d-inline-block align-top">
     </a>
     <div class="d-flex">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
               <a class="nav-link nav_text" href="{{ route('login') }}">Special Contents</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link nav_text" href="{{ route('login') }}">Quiz</a>
+              <a class="nav-link nav_text" href="{{ route('login') }}">Play the Battle</a>
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link nav_text" href="{{ route('login') }}">About Tushima</a>
@@ -43,7 +43,7 @@
               <a class="nav-link nav_text" href="{{ url('/special') }}">Special Contents</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link nav_text" href="{{ url('/quiz_select') }}">Quiz</a>
+              <a class="nav-link nav_text" href="{{ url('/quiz_select') }}">Play the Battle</a>
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link nav_text" href="{{ url('/about') }}">About Tushima</a>
@@ -52,18 +52,18 @@
               <a class="nav-link nav_text" href="{{ url('/qanda') }}">Q&A</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Account
               </a>
               <ul class="dropdown-menu" style="background-color:black !important;" aria-labelledby="navbarDropdown">
                 <li>
-                  <p class="dropdown-item nav-link">
+                  <p class="dropdown-item nav-link text-white">
                       {{ Auth::user()->name }} <span class="caret"></span>
                   </p>
                 </li>
                 <li>
                   <div>
-                  <a class="dropdown-item nav-link" href="{{ route('logout') }}"
+                  <a class="dropdown-item nav-link text-white" href="{{ route('logout') }}"
                      onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
                       {{ __('Logout') }}

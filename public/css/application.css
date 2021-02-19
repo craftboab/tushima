@@ -10,7 +10,7 @@ body > .box {
 height: auto;
 }
 .box{
-background: url('/video/img_l/bg.jpg');
+background: url('/video/img_l/top_background.jpg');
 height:100%;
 min-height:100%;
 }

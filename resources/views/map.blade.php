@@ -17,7 +17,6 @@
         <area target="" alt="" title="" href="javascript:map_function1()" coords="219,360,21" shape="circle">
         <area target="" alt="" title="" href="javascript:map_function2()" coords="104,456,23" shape="circle">
         <area target="" alt="" title="" href="javascript:map_function1()" coords="121,157,25" shape="circle">
-        <area target="" alt="" title="" href="javascript:map_function2()" coords="264,126,326,190" shape="rect">
       </map>
     </div>
 
@@ -25,17 +24,19 @@
       <div class="container" style="margin-right:100px;">
 
         <div class="my-2">
-          <img src="" id="title2" class="float-md-end my-5" style="width:100%; height:auto;"  usemap="#image-map">
-          <div class="display-4 text-center" id="map_title">change</div>
+          <img src="" id="title2" class="float-md-end my-3" style="width:120% !important; height:auto;"  usemap="#image-map">
+          <h2 class="text-left" id="map_title">WATADUMI SHRINE</h2>
+          <!-- <h3 class="text-left" id="map_title_sub">和多都美神社</h3> -->
           <div>
             <img src="video/img_l/temple01.jpg" class="d-block mx-auto" id='map_image' style="width: 100% !important; margin-top:20px !important;" alt="">
           </div>
           <div class="mt-3" style="width:100% !important;" id="map_describe">
-            <h5>
-              『Ghost of Tsushima』（ゴースト・オブ・ツシマ）は、Sucker Punch Productionsが開発し、ソニー・インタラクティブエンタテインメントより2020年7月17日に発売された、PlayStation 4用アクションアドベンチャーゲームである[1]。
-
-    本作は文永11年（ユリウス暦1274年）の元朝による日本侵攻（文永の役）を題材としている[4]。
-            </h5>
+            <h6>
+              GHOST OF TSUSHIMA unfolds in Tsushima, in the Genkai Sea in northern Kyushu, Japan.
+        The island is part of Nagasaki Prefecture and boasts abundant nature with 89% of the terrain covered in mountains and forests.
+        With most of East Asia just a stone’s throw away,
+        it has also set the stage numerous historical events, including the Mongol invasions of Japan.
+      </h6>
           </div>
         </div>
       </div>
@@ -49,11 +50,11 @@
 const title = document.getElementById("title");
 const title2 = document.getElementById("title2");
 
-if (window.matchMedia('(max-width: 991px)').matches) {
+if (window.matchMedia('(max-width: 767px)').matches) {
     //スマホ処理
     // title2.src = "";
     title.src = "/video/img_s/trip_map01.png";
-} else if (window.matchMedia('(min-width:992px)').matches) {
+} else if (window.matchMedia('(min-width:768px)').matches) {
     // title.src = "";
     title2.src = "/video/img_s/trip_map01.png";
 
@@ -64,12 +65,14 @@ if (window.matchMedia('(max-width: 991px)').matches) {
 <script>
   function map_function1(){
     document.getElementById('map_title').textContent = "watatsumi-Jinjya ";
+    // document.getElementById('map_title_sub').textContent = "和多都美神社";
     document.getElementById('map_image').src = "video/img_l/temple01.jpg";
     document.getElementById('map_describe').textContent =  "In the late 13th century, the Mongol empire has laid waste to entire nations along their campaign to conquer the East. Tsushima Island is all that stands between mainland Japan and a massive Mongol invasion fleet led by the ruthless and cunning general, Khotun Khan. As the island burns in the wake of the first wave of the Mongol assault, samurai warrior Jin Sakai stands as one of the last surviving members of his clan. He is resolved to do whatever it takes, at any cost, to protect his people and reclaim his home. He must set aside the traditions that have shaped him as a warrior to forge a new path, the path of the Ghost, and wage an unconventional war for the freedom of Tsushima.";
   }
   function map_function2(){
     // location.href = "/map";
     document.getElementById('map_title').textContent = "shiratake";
+    // document.getElementById('map_title_sub').textContent = "白嶽";
     document.getElementById('map_image').src = "video/img_l/map_image_02.jpg";
     document.getElementById('map_describe').textContent =  "In the late 13th century, the Mongol empire has laid waste to entire nations along their campaign to conquer the East. Tsushima Island is all that stands between mainland Japan and a massive Mongol invasion fleet led by the ruthless and cunning general, Khotun Khan. As the island burns in the wake of the first wave of the Mongol assault, samurai warrior Jin Sakai stands as one of the last surviving members of his clan. He is resolved to do whatever it takes, at any cost, to protect his people and reclaim his home. He must set aside the traditions that have shaped him as a warrior to forge a new path, the path of the Ghost, and wage an unconventional war for the freedom of Tsushima.";
   }

@@ -16,7 +16,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_ao_02.png',
@@ -24,7 +24,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_ao_03.png',
@@ -32,7 +32,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_ao_04.png',
@@ -40,7 +40,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/BATTLE_ao_05.png',
@@ -48,7 +48,7 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C','D'],
+    answers: [ 'A','B','C'],
     correct: 'A'
   }
 ];

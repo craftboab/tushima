@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.quiz')
 @include('navbar.head')
 @include('footer')
 
@@ -18,18 +18,18 @@
   <div class="black-background" id="js-black-bg1"></div>
 </div>
 
-<div class="" style="height: 800px">
+<div class="" style="height: auto;">
       <div class="container-fruid">
         <div class="text-center">
-          <img src="" id="quetion_count" class="mt-5" style="width:15%; height:5%;" alt="count quetion">
+          <img src="" id="quetion_count" class="mt-5" style="width:35%; height:10%;" alt="count quetion">
         </div>
       </div>
 
       <div class="container">
         <div>
-          <div class="mt-5">
-            <div style="text-align:center;">
-            	<video id="quiz_image" poster="" src="" alt="" class="mx-3" width="55%" height="50%" controls type="video/mp4"></video>
+          <div class="mt-1">
+            <div style="text-align:center; margin-top: -10% !important;">
+            	<video id="quiz_image" poster="" src="" alt="" class="" width="90%" height="auto" controls playsinline type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -41,21 +41,21 @@
         </div>
       </div> -->
 
-      <div class="container mt-5">
+      <div class="container mt-2">
         <div id="js-items" class="d-flex justify-content-center">
           <div class="btn-group-vertical" role="group" aria-label="ボタングループサンプル">
             <div class="m-2">
-              <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
+              <button type="button" id="" style="width:150px !important; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
             </div>
             <div class="m-2">
-              <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
+              <button type="button" id="" style="width:150px !important; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
             </div>
             <div class="m-2">
-              <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
+              <button type="button" id="" style="width:150px !important; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
             </div>
-            <div class="m-2">
+            <!-- <div class="m-2">
               <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
-            </div>
+            </div> -->
           </div>
 
         </div>
