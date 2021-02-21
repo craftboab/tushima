@@ -6,36 +6,36 @@
 <div class="container" style="height:100vh;">
     <div class="row justify-content-center">
         <div class="col-md-8 mt-5">
-            <div class="" style="background-color:; text:white; margin-top:20%;">
-                <div class="text-center display-5 text-white" >{{ __('Login') }}</div>
+            <div class="card" style="margin-top:20%;">
+                <div class="card-header" style="background-color:grey; text:white;">{{ __('Login') }}</div>
 
-                <div class="mt-3" >
+                <div class="card-body" style="background-color:grey; text:white;">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right text-white">{{ __('E-Mail') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong class="text-white">{{ $message }}</strong>
+                                        <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right text-white">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="current-password">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong class="text-white">{{ $message }}</strong>
+                                        <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -66,13 +66,12 @@
                                 @endif -->
                             </div>
                         </div>
-												<div class="mt-5">
-		                      <div class="text-right">
-		                        <button type="button" class="btn btn-primary" style="margin-right:auto;" onclick="location.href='{{ route('register') }}'">Register まだの方はこちら</button>
-		                      </div>
-		                    </div>
                     </form>
-
+                    <div class="mt-5">
+                      <div class="text-right">
+                        <button type="button" class="btn btn-primary" onclick="location.href='{{ route('register') }}'">Register まだの方はこちら</button>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
