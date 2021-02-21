@@ -1,14 +1,16 @@
 @section('navbar.head')
 
-<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
-    <a class="navbar-brand" style="width:20%; height:auto;" href="https://www.gort-tsushima.com">
+<nav class="">
+  <div class="container-fluid navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+    <a class="navbar-brand" style="width:20%; height:auto;" href="{{ url('/')}}">
       <img src="/video/img_s/Logo_kari.png" alt="" width="80%" height="10%" class="d-inline-block align-top">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+    <div class="d-flex">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
-        <ul class="navbar-nav ml-auto">
+      </button>
+      <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto m-2 mb-lg-0">
           @guest
             <li class="nav-item mx-1">
               <a class="nav-link nav_text" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -47,7 +49,9 @@
 
           @endguest
         </ul>
+      </div>
     </div>
+  </div>
 </nav>
 
 @endsection

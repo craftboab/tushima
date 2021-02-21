@@ -52,3 +52,22 @@
   z-index: 1;
   cursor: pointer;
 }
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    color: #ffffff;
+    /* background-color: #2779bd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    top: 90%;
+    left:30%;
+}

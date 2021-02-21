@@ -18,15 +18,7 @@ Auth::routes();
 | 1) User 認証不要
 |--------------------------------------------------------------------------
 */
-Route::get('/lp', function () {
-   return view('lp'); });
 
-Route::get('/lp2', function () {
-  return view('lp2'); });
-
-Route::get('/', function(){
-  return view('top'); });
-Route::get('/quiz_select', 'QuizController@quiz_select');
 
 // Route::get('/quiz', function() {
 //   return view('/quiz');
@@ -38,7 +30,10 @@ Route::get('/quiz_select', 'QuizController@quiz_select');
 |--------------------------------------------------------------------------
 */
 Route::group(['middleware' => 'auth:user'], function() {
+    Route::get('/select_lang', function() {
+      return view('/select_lang'); });
 
+    Route::get('/quiz_select', 'QuizController@quiz_select');
     Route::get('/quiz_1', 'QuizController@quiz_1');
     Route::get('/quiz_1_correct', 'QuizController@quiz_1_correct');
     Route::get('/quiz_1_fail', 'QuizController@quiz_1_fail');
@@ -48,12 +43,20 @@ Route::group(['middleware' => 'auth:user'], function() {
 
 
 
-    Route::get('/map', function(){
-      return view('map'); });
-    Route::get('/special', function(){
-      return view('special'); });
-    Route::get('/about', function(){
-      return view('about'); });
+    Route::get('/quiz_select_jp', 'QuizJpController@quiz_select');
+    Route::get('/quiz_1_jp', 'QuizJpController@quiz_1');
+    Route::get('/quiz_1_correct_jp', 'QuizJpController@quiz_1_correct');
+    Route::get('/quiz_1_fail_jp', 'QuizJpController@quiz_1_fail');
+    Route::get('/quiz_2_jp', 'QuizJpController@quiz_2');
+    Route::get('/quiz_2_correct_jp', 'QuizJpController@quiz_2_correct');
+    Route::get('/quiz_2_fail_jp', 'QuizJpController@quiz_2_fail');
+
+    // Route::get('/map', function(){
+    //   return view('map'); });
+    // Route::get('/special', function(){
+    //   return view('special'); });
+    // Route::get('/about', function(){
+    //   return view('about'); });
 });
 
 /*

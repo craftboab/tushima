@@ -10,8 +10,7 @@
 
     <title>Ghost of Tushima</title>
 
-    <!-- <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script> -->
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -20,14 +19,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/map.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/log.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="map_box">
+    <div class="">
       <div id="app">
          @yield('navbar.head')
       </div>
-      <main class="mb-5">
+      <main class="">
          @yield('content')
       </main>
       <div>

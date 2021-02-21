@@ -11,52 +11,52 @@ let popup_timeover = document.getElementById('js-popup1');
 
 const quiz = [
   {
-    count: 'video/quiz/BATTLE_ao_01.png',
-    // question: '誉れを言った人気者',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    count: 'video/quiz/BATTLE_aka_01.png',
+    // question: '岡田',
+    image: 'video/clip/Question_01_sample.mp4',
+    image_sub: 'video/clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'Kojiki','Nihonshoki','Manyoushu'],
-    correct: 'Manyoushu'
+    answers: [ '小茂田浜','久根浜','横浜'],
+    correct: '小茂田浜'
   }, {
-    count: 'video/quiz/BATTLE_ao_02.png',
-    // question: '１＋１＝',
+    count: 'video/quiz/BATTLE_aka_02.png',
+    // question: '野間',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'Semi','Hotaru','Kabutomushi'],
-    correct: 'Semi'
+    answers: [ 'キツネ','馬','ヤマネコ'],
+    correct: '馬'
   }, {
-    count: 'video/quiz/BATTLE_ao_03.png',
-    // question: '２＋４＝',
+    count: 'video/quiz/BATTLE_aka_03.png',
+    // question: 'ラム',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
-    image_alt: 'quiz_image',
-    answers: [ 'Harunobu Adachi','Hironori Nagao','Tokiyori Yarikawa'],
-    correct: 'Harunobu Adachi'
+    image_alt: '',
+    answers: [ '巴','典夫','文太'],
+    correct: '文太'
   }, {
-    count: 'video/quiz/BATTLE_ao_04.png',
-    // question: '５＋５＝',
+    count: 'video/quiz/BATTLE_aka_04.png',
+    // question: 'mario',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C'],
-    correct: 'A'
+    answers: [ '厳原八幡宮','北野八幡宮','大宰府八幡宮'],
+    correct: '厳原八幡宮'
   }, {
-    count: 'video/quiz/BATTLE_ao_05.png',
-    // question: '５＋５＝',
+    count: 'video/quiz/BATTLE_aka_05.png',
+    // question: 'lam',
     image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image_sub: 'video/clip/top_img.png',
     image_alt: 'quiz_image',
-    answers: [ '800m','2.2km','42.195km'],
-    correct: '2.2km'
+    answers: [ '壱岐','対馬','五島'],
+    correct: '壱岐'
   }
 ];
 
 const $window = window;
 const $doc = document;
 
-//問題番号
+// 問題番号
 const $count = $doc.getElementById('quetion_count');
 // 問題文
 // const $question = $doc.getElementById('js-question');
@@ -64,8 +64,6 @@ const $count = $doc.getElementById('quetion_count');
 const $quiz_image = $doc.getElementById('quiz_image');
 // 問題回答
 const $buttons = $doc.querySelectorAll('.boab');
-// 地図
-// const $panel_map = $doc.querySelectorAll('.panel');
 
 const quizLen = quiz.length;
 let quizCount = 0;
@@ -112,19 +110,19 @@ const judge = (elm) => {
 const $congrat = $doc.getElementById('congrat');
 
 function change_correct(){
-  $congrat.href = "/quiz_2_correct";
+  $congrat.href = "/quiz_1_correct_jp";
   $congrat.textContent = "correct";
 }
 
 function change_fail(){
-  $congrat.href = "/quiz_2_fail";
+  $congrat.href = "/quiz_1_fail_jp";
   $congrat.textContent = "fail";
 }
 
 const showEnd = () => {
-  document.getElementById('result').textContent = 'Youe Score' + score + '/' + quizLen;
+  document.getElementById('result').textContent = 'あなたのスコアは' + score + '/' + quizLen + 'です';
   // judgement();
-  if(score > 3){
+  if(score > 4){
     change_correct();
    }else{
     change_fail();

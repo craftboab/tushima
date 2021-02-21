@@ -16,24 +16,24 @@ const quiz = [
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'Kojiki','Nihonshoki','Manyoushu'],
-    correct: 'Manyoushu'
+    answers: [ '古事記','日本書紀','万葉集'],
+    correct: '万葉集'
   }, {
     count: 'video/quiz/BATTLE_ao_02.png',
     // question: '１＋１＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'Semi','Hotaru','Kabutomushi'],
-    correct: 'Semi'
+    answers: [ 'セミ','ホタル','カブトムシ'],
+    correct: 'セミ'
   }, {
     count: 'video/quiz/BATTLE_ao_03.png',
     // question: '２＋４＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'Harunobu Adachi','Hironori Nagao','Tokiyori Yarikawa'],
-    correct: 'Harunobu Adachi'
+    answers: [ '安達晴信','長尾博基','鑓川時頼'],
+    correct: '安達晴信'
   }, {
     count: 'video/quiz/BATTLE_ao_04.png',
     // question: '５＋５＝',
@@ -112,17 +112,17 @@ const judge = (elm) => {
 const $congrat = $doc.getElementById('congrat');
 
 function change_correct(){
-  $congrat.href = "/quiz_2_correct";
+  $congrat.href = "/quiz_2_correct_jp";
   $congrat.textContent = "correct";
 }
 
 function change_fail(){
-  $congrat.href = "/quiz_2_fail";
+  $congrat.href = "/quiz_2_fail_jp";
   $congrat.textContent = "fail";
 }
 
 const showEnd = () => {
-  document.getElementById('result').textContent = 'Youe Score' + score + '/' + quizLen;
+  document.getElementById('result').textContent = '終了！あなたのスコアは' + score + '/' + quizLen + 'です';
   // judgement();
   if(score > 3){
     change_correct();

@@ -3,7 +3,7 @@
 @include('footer')
 
 @section('content')
-<script src="{{ asset('js/quiz2.js') }}" defer></script>
+<script src="{{ asset('js/quiz_jp.js') }}" defer></script>
 
 <!--  modal finish -->
 <div class="popup" id="js-popup">
@@ -21,15 +21,15 @@
 <div class="" style="height: auto;">
       <div class="container-fruid">
         <div class="text-center">
-          <img src="" id="quetion_count" class="mt-5" style="width:30%; height:auto;" alt="count quetion">
+          <img src="" id="quetion_count" class="mt-5" style="width:30%; height:auto;" alt="count question">
         </div>
       </div>
 
       <div class="container">
         <div>
           <div class="mt-1">
-            <div style="text-align:center; margin-top: -10% !important;">
-            	<video id="quiz_image" poster="" src="" alt="" class="" width="90%" height="auto" controls playsinline type="video/mp4"></video>
+            <div style="text-align:center; margin-top: -10px !important;">
+            	<video id="quiz_image" poster="" src="" alt="" class="mx-3" width="90%" height="auto" controls playsinline type="video/mp4"></video>
             </div>
           </div>
         </div>
@@ -57,8 +57,13 @@
               <button type="button" id="" style="width:300px; background-color:rgb(115, 11, 49);" class="btn btn-danger boab">Primary</button>
             </div> -->
           </div>
-
         </div>
+      </div>
+  </div>
+  <div class="container-fruid mt-2">
+    <div class="" style="height:80px; ">
+      <div class="d-flex align-items-center justify-content-center text-white" style="height:100%;">
+        <p>このクイズをする前に是非1度ゲームをお楽しみください。</p>
       </div>
   </div>
 

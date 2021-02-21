@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = '/select_lang';
 
     /**
      * Create a new controller instance.
@@ -53,6 +53,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'address' => ['required','string', 'max:255'],
+            'country' => ['required','string', 'max:255'],
         ]);
     }
 
@@ -71,6 +72,7 @@ class RegisterController extends Controller
             'count2' => 0,
             'password' => Hash::make($data['password']),
             'address' => $data['address'],
+            'country' => $data['country'],
         ]);
     }
 }

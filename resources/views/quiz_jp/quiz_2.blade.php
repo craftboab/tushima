@@ -3,7 +3,7 @@
 @include('footer')
 
 @section('content')
-<script src="{{ asset('js/quiz2.js') }}" defer></script>
+<script src="{{ asset('js/quiz2_jp.js') }}" defer></script>
 
 <!--  modal finish -->
 <div class="popup" id="js-popup">

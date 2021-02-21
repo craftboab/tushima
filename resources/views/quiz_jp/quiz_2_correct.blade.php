@@ -14,8 +14,8 @@
 </div>
 <div class="text-center">
   <div class="display-4">Congratulation!!</div>
-  <button type="button" class="btn btn-danger m-4" onclick="location.href='/quiz_select'">Quiz Select</button>
-  <button type="button" class="btn btn-danger m-4" onclick="location.href='https://www.gort-tsushima.com'">Back to the Top page</button>
+  <button type="button" class="btn btn-danger m-4" onclick="location.href='/quiz_select_jp'">Quis Select</button>
+  <button type="button" class="btn btn-danger m-4" onclick="location.href='https://www.gort-tsushima.com'">Topへ戻る</button>
 </div>
 @else
 <div class="text-image">
@@ -23,8 +23,8 @@
   <!-- <h4>Thank you for playing</h4> -->
 </div>
 <div class="text-right">
-  <button type="button" class="btn btn-danger m-4" onclick="location.href='/quiz_select'">Quiz Select</button>
-  <button type="button" class="btn btn-danger m-4" onclick="location.href='https://www.gort-tsushima.com'">Back to the Top page</button>
+  <button type="button" class="btn btn-danger m-4" onclick="location.href='/quiz_select_jp'">Quiz Select</button>
+  <button type="button" class="btn btn-danger m-4" onclick="location.href='https://www.gort-tsushima.com'">Topへ戻る</button>
 </div>
 @endif
 @endsection

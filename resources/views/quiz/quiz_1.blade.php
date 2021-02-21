@@ -3,7 +3,7 @@
 @include('footer')
 
 @section('content')
-<script src="{{ asset('js/quiz.js') }}" defer></script>
+
 
 <!--  modal finish -->
 <div class="popup" id="js-popup">
@@ -21,13 +21,13 @@
 <div class="" style="height: auto;">
       <div class="container-fruid">
         <div class="text-center">
-          <img src="" id="quetion_count" class="mt-5" style="width:35%; height:10%;" alt="count quetion">
+          <img src="" id="quetion_count" class="mt-5" style="width:30%; height:auto;" alt="count question">
         </div>
       </div>
 
       <div class="container">
         <div>
-          <div class="mt-1">
+          <div class="mt-4">
             <div style="text-align:center; margin-top: -10px !important;">
             	<video id="quiz_image" poster="" src="" alt="" class="mx-3" width="90%" height="auto" controls playsinline type="video/mp4"></video>
             </div>
@@ -63,12 +63,12 @@
   <div class="container-fruid mt-2">
     <div class="" style="height:80px; ">
       <div class="d-flex align-items-center justify-content-center text-white" style="height:100%;">
-        <p>このクイズをする前に是非1度ゲームをお楽しみください。</p>
+        <p>Recommend Play original before start "Play the Battle"</p>
       </div>
   </div>
 
-</body>
 
-</html>
+<script src="{{ asset('js/quiz.js') }}" defer></script>
+
 
 @endsection

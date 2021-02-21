@@ -14,9 +14,9 @@
 </div>
 <div class="text-right">
   <div class="">
-    <button type="button" class="btn btn-danger m-4" onclick="location.href='quiz_select'">Try Again</button>
+    <button type="button" class="btn btn-danger m-4" onclick="location.href='quiz_select_jp'">再挑戦</button>
 
-    <button type="button" class="btn btn-danger m-4" onclick="location.href='https://www.gort-tsushima.com'">Back to the Top page</button>
+    <button type="button" class="btn btn-danger m-4" onclick="location.href='https://www.gort-tsushima.com'">Topへ戻る</button>
   </div>
 </div>
 @endsection

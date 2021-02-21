@@ -23,13 +23,11 @@
     <link href="{{ asset('css/application.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="box">
+    <div class="" style="background:black;">
       <div id="app">
-         @yield('navbar.navbar')
-         @yield('navbar.top_nav')
          @yield('navbar.head')
       </div>
-      <main class="mb-5">
+      <main class="">
          @yield('content')
       </main>
       <div>

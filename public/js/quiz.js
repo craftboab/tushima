@@ -16,40 +16,40 @@ const quiz = [
     image: 'video/clip/Question_01_sample.mp4',
     image_sub: 'video/clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C'],
-    correct: 'A'
+    answers: [ 'Komodahama','Kunehama','Yokohama'],
+    correct: 'Komodahama'
   }, {
     count: 'video/quiz/BATTLE_aka_02.png',
     // question: '野間',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C'],
-    correct: 'A'
+    answers: [ 'Fox','Hource','Cat'],
+    correct: 'Hource'
   }, {
     count: 'video/quiz/BATTLE_aka_03.png',
     // question: 'ラム',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: '',
-    answers: [ 'A','B','C'],
-    correct: 'A'
+    answers: [ 'Tomoe','Norio','Bunta'],
+    correct: 'Bunta'
   }, {
     count: 'video/quiz/BATTLE_aka_04.png',
     // question: 'mario',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C'],
-    correct: 'A'
+    answers: [ 'IzuharaHachimangu','KitanoHachimangu','DazaifuHachimangu'],
+    correct: 'IzuharaHachimangu'
   }, {
     count: 'video/quiz/BATTLE_aka_05.png',
     // question: 'lam',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_img.png',
     image_alt: 'quiz_image',
-    answers: [ 'A','B','C'],
-    correct: 'A'
+    answers: [ 'Iki','Tushima','Gotou'],
+    correct: 'Iki'
   }
 ];
 
@@ -120,7 +120,7 @@ function change_fail(){
 }
 
 const showEnd = () => {
-  document.getElementById('result').textContent = '終了！あなたのスコアは' + score + '/' + quizLen + 'です';
+  document.getElementById('result').textContent = 'Youe Score' + score + '/' + quizLen;
   // judgement();
   if(score > 4){
     change_correct();
