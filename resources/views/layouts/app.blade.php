@@ -23,7 +23,7 @@
     <link href="{{ asset('css/application.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="" style="background:black;">
+    <div class="layouts" style="width:100vw; height: 100vh; background:black;">
       <div id="app">
          @yield('navbar.head')
       </div>

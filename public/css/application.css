@@ -45,3 +45,13 @@ min-height:100%;
   padding: 0 26px;
   border-color: #dbdbdb;
   font-size: 14px;
+}
+
+
+
+@media (max-width: 899px) {
+  .layouts {
+    width: 100vw;
+    height: 100vh;
+  }
+}

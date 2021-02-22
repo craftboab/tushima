@@ -24,7 +24,7 @@
 
 </head>
 <body>
-    <div class="layouts" style="background:black;">
+    <div class="" style="width:100vw; height: 100vh; background:black;">
       <div id="app">
          @yield('navbar.head')
       </div>
