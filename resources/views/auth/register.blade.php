@@ -2,10 +2,10 @@
 @include('footer')
 
 @section('content')
-<div class="container" style="height:100vh;">
+<div class="container" style="height:100%;">
     <div class="row justify-content-center">
         <div class="col-md-8 mt-5">
-            <div class="" style="background-color:; text:white; margin-top:20%;">
+            <div class="" style="background-color:; text:white;">
                 <div class="text-center display-5 text-white">{{ __('Register') }}</div>
 
                 <div class="mt-3">
@@ -90,7 +90,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="form-group row mb-5">
                             <div class="col-md-6 offset-md-4">
                                 <button id="register" type="submit" style="background-color:rgb(98, 8, 8);" class="text-white btn">
                                     {{ __('Register') }}

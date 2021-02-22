@@ -13,7 +13,7 @@ const quiz = [
   {
     count: 'video/quiz/Question_no1.png',
     // question: '岡田',
-    image: 'video/clip/Question_01_sample.mp4',
+    image: 'video/clip/Quiz1_1.mp4',
     image_sub: 'video/clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ '小茂田浜','久根浜','横浜'],
