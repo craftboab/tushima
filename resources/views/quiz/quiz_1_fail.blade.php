@@ -1,5 +1,4 @@
 @extends('layouts.quiz')
-@include('navbar.head')
 @include('footer')
 
 @section('content')
@@ -10,13 +9,10 @@
 @endif
 
 <div class="text-image">
-  <img src="video/quiz/BATTLE_Gauge_0.jpg" style="width:100%; height:auto;" alt="fail_quiz">
+  <img src="video/quiz/BATTLE_Gauge_0.jpg" style="width:100%; height:auto;" alt="battle loose">
 </div>
-<div class="text-right">
-  <div class="">
-    <button type="button" class="btn btn-danger m-4" onclick="location.href='quiz_select'">Try Again</button>
-
-    <button type="button" class="btn btn-danger m-4" onclick="location.href='https://www.gort-tsushima.com'">Back to the Top page</button>
-  </div>
+<div class="text-center my-3">
+    <button type="button" class="btn text-white m-2" style="background:rgb(98, 8, 8);" onclick="location.href='quiz_select'">Try Again</button>
+    <button type="button" class="btn text-white m-2" style="background:rgb(98, 8, 8);" onclick="location.href='https://www.gort-tsushima.com'">Back to the Top page</button>
 </div>
 @endsection

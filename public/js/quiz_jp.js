@@ -11,7 +11,7 @@ let popup_timeover = document.getElementById('js-popup1');
 
 const quiz = [
   {
-    count: 'video/quiz/BATTLE_aka_01.png',
+    count: 'video/quiz/Question_no1.png',
     // question: '岡田',
     image: 'video/clip/Question_01_sample.mp4',
     image_sub: 'video/clip/Question_01_sample.png',
@@ -19,7 +19,7 @@ const quiz = [
     answers: [ '小茂田浜','久根浜','横浜'],
     correct: '小茂田浜'
   }, {
-    count: 'video/quiz/BATTLE_aka_02.png',
+    count: 'video/quiz/Question_no2.png',
     // question: '野間',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -27,7 +27,7 @@ const quiz = [
     answers: [ 'キツネ','馬','ヤマネコ'],
     correct: '馬'
   }, {
-    count: 'video/quiz/BATTLE_aka_03.png',
+    count: 'video/quiz/Question_no3.png',
     // question: 'ラム',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -35,7 +35,7 @@ const quiz = [
     answers: [ '巴','典夫','文太'],
     correct: '文太'
   }, {
-    count: 'video/quiz/BATTLE_aka_04.png',
+    count: 'video/quiz/Question_no4.png',
     // question: 'mario',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -43,7 +43,7 @@ const quiz = [
     answers: [ '厳原八幡宮','北野八幡宮','大宰府八幡宮'],
     correct: '厳原八幡宮'
   }, {
-    count: 'video/quiz/BATTLE_aka_05.png',
+    count: 'video/quiz/Question_no5.png',
     // question: 'lam',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_img.png',
@@ -111,16 +111,16 @@ const $congrat = $doc.getElementById('congrat');
 
 function change_correct(){
   $congrat.href = "/quiz_1_correct_jp";
-  $congrat.textContent = "correct";
+  $congrat.textContent = "勝利";
 }
 
 function change_fail(){
   $congrat.href = "/quiz_1_fail_jp";
-  $congrat.textContent = "fail";
+  $congrat.textContent = "敗北";
 }
 
 const showEnd = () => {
-  document.getElementById('result').textContent = 'あなたのスコアは' + score + '/' + quizLen + 'です';
+  document.getElementById('result').textContent = 'あなたのスコアは  ' + score + '/' + quizLen + 'です';
   // judgement();
   if(score > 4){
     change_correct();

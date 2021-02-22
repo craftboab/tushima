@@ -55,7 +55,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" style="background-color:rgb(98, 8, 8);" class="btn text-white">
                                     {{ __('Login') }}
                                 </button>
 
@@ -68,7 +68,7 @@
                         </div>
 												<div class="mt-5">
 		                      <div class="text-right">
-		                        <button type="button" class="btn btn-primary" style="margin-right:auto;" onclick="location.href='{{ route('register') }}'">Register まだの方はこちら</button>
+		                        <button type="button" class="btn text-white" style="margin-right:auto; background-color:rgb(98, 8, 8);" onclick="location.href='{{ route('register') }}'">Register</button>
 		                      </div>
 		                    </div>
                     </form>

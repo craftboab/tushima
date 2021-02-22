@@ -1,6 +1,6 @@
 @extends('layouts.quiz')
 
-
+@include('footer')
 
 @section('content')
 @if (session('status'))
@@ -10,19 +10,21 @@
 @endif
 
 
-<div class="text-image relative"  style="width:100%; height:auto;">
-  <img class="relative" src="video/quiz/BATTLE_Gauge-05.jpg" style="width:100%; height:auto; margin-top: -7% !important;" alt="success">
-  <div class="absolute">
+<div class="text-image">
+  <img src="video/quiz/BATTLE_Gauge-05.jpg" style="width:100%; height:auto;" alt="battle win">
+  <div>
     @if($user->count === 1 )
-    <div class="text-center">
-      <h2 class="mt-2">Now unlocked Quiz2</h2>
-      <button type="button" class="btn btn-primary" style="width:100%;" onclick="location.href='/quiz_select'">Try Quiz2</button>
-      <button type="button" class="btn btn-danger" style="width:100%;" onclick="location.href='https://www.gort-tsushima.com'">Back to top page</button>
+    <div class="text-center my-4">
+      <h2 class="mt-3 text-white">Now unlocked Quiz2</h2>
+      <div class="text-center my-3">
+        <button type="button" class="btn text-white m-2" style="background:rgb(98, 8, 8);" onclick="location.href='/quiz_select'">Quiz Select</button>
+        <button type="button" class="btn text-white m-2" style="background:rgb(98, 8, 8);" onclick="location.href='https://www.gort-tsushima.com'">Back to top page</button>
+      </div>
     </div>
     @else
-    <div class="text-center">
-      <button type="button" class="btn btn-danger" style="width:100%;" onclick="location.href='/quiz_select'">Quiz Select</button>
-      <button type="button" class="btn btn-danger" style="width:100%;" onclick="location.href='https://www.gort-tsushima.com'">Back to top page</button>
+    <div class="text-center my-3">
+      <button type="button" class="btn text-white m-2" style="background:rgb(98, 8, 8);" onclick="location.href='/quiz_select'">Quiz Select</button>
+      <button type="button" class="btn text-white m-2" style="background:rgb(98, 8, 8);" onclick="location.href='https://www.gort-tsushima.com'">Back to top page</button>
     </div>
     @endif
   </div>

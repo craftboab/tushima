@@ -11,7 +11,7 @@ let popup_timeover = document.getElementById('js-popup1');
 
 const quiz = [
   {
-    count: 'video/quiz/BATTLE_ao_01.png',
+    count: 'video/quiz/Question_no1.png',
     // question: '誉れを言った人気者',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -19,7 +19,7 @@ const quiz = [
     answers: [ 'Kojiki','Nihonshoki','Manyoushu'],
     correct: 'Manyoushu'
   }, {
-    count: 'video/quiz/BATTLE_ao_02.png',
+    count: 'video/quiz/Question_no2.png',
     // question: '１＋１＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -27,7 +27,7 @@ const quiz = [
     answers: [ 'Semi','Hotaru','Kabutomushi'],
     correct: 'Semi'
   }, {
-    count: 'video/quiz/BATTLE_ao_03.png',
+    count: 'video/quiz/Question_no3.png',
     // question: '２＋４＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -35,7 +35,7 @@ const quiz = [
     answers: [ 'Harunobu Adachi','Hironori Nagao','Tokiyori Yarikawa'],
     correct: 'Harunobu Adachi'
   }, {
-    count: 'video/quiz/BATTLE_ao_04.png',
+    count: 'video/quiz/Question_no4.png',
     // question: '５＋５＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -43,7 +43,7 @@ const quiz = [
     answers: [ 'A','B','C'],
     correct: 'A'
   }, {
-    count: 'video/quiz/BATTLE_ao_05.png',
+    count: 'video/quiz/Question_no5.png',
     // question: '５＋５＝',
     image: 'video/clip/Top_m_kari.mp4',
     image_sub: 'video/clip/top_sample.png',
@@ -113,18 +113,18 @@ const $congrat = $doc.getElementById('congrat');
 
 function change_correct(){
   $congrat.href = "/quiz_2_correct";
-  $congrat.textContent = "correct";
+  $congrat.textContent = "Win";
 }
 
 function change_fail(){
   $congrat.href = "/quiz_2_fail";
-  $congrat.textContent = "fail";
+  $congrat.textContent = "Loose";
 }
 
 const showEnd = () => {
-  document.getElementById('result').textContent = 'Youe Score' + score + '/' + quizLen;
+  document.getElementById('result').textContent = 'Youe Score  ' + score + '/' + quizLen;
   // judgement();
-  if(score > 3){
+  if(score > 4){
     change_correct();
    }else{
     change_fail();
