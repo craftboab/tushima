@@ -1,9 +1,8 @@
 @extends('layouts.app')
-
 @include('footer')
 
 @section('content')
-<div class="container" style="height:100vh;">
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8 mt-5">
             <div class="" style="background-color:; text:white; margin-top:20%;">
