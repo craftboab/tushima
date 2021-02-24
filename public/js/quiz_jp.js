@@ -48,8 +48,8 @@ const quiz = [
     image: 'video/quiz_clip/Question_05.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ '壱岐','対馬','五島'],
-    correct: '壱岐'
+    answers: [ 'A','B','C'],
+    correct: 'A'
   }
 ];
 
