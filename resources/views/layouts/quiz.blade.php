@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Ghost of Tushima</title>
+    <title>Ghost of Tsushima</title>
 
 
 
