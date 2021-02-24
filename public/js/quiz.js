@@ -110,22 +110,46 @@ const judge = (elm) => {
 const $congrat = $doc.getElementById('congrat');
 
 function change_correct(){
-  $congrat.href = "/quiz_1_correct";
+  $congrat.href = "/quiz_en_correct_1";
   $congrat.textContent = "Win";
 }
 
-function change_fail(){
-  $congrat.href = "/quiz_1_fail";
+function change_fail0(){
+  $congrat.href = "/quiz_en_fail_1_0";
+  $congrat.textContent = "Loose";
+}
+function change_fail1(){
+  $congrat.href = "/quiz_en_fail_1_1";
+  $congrat.textContent = "Loose";
+}
+function change_fail2(){
+  $congrat.href = "/quiz_en_fail_1_2";
+  $congrat.textContent = "Loose";
+}
+function change_fail3(){
+  $congrat.href = "/quiz_en_fail_1_3";
+  $congrat.textContent = "Loose";
+}
+function change_fail4(){
+  $congrat.href = "/quiz_en_fail_1_4";
   $congrat.textContent = "Loose";
 }
 
 const showEnd = () => {
   document.getElementById('result').textContent = 'Youe Score  ' + score + '/' + quizLen;
   // judgement();
-  if(score > 4){
+  if(score === 5){
     change_correct();
-   }else{
-    change_fail();
+  }else if(score === 4){
+    change_fail4();
+  }else if(score === 3){
+    change_fail3();
+  }else if(score === 2){
+    change_fail2();
+  }else if(score === 1){
+    change_fail1();
+  }else if(score === 0){
+    change_fail0();
    }
   }
 

@@ -59,15 +59,15 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                <div class="text-left">
-                                  <a href="{{ route('password.request') }}" class="card-text">パスワードを忘れた方</a>
+                                <div class="text-left mt-2">
+                                  <a href="{{ route('password.request') }}" class="card-text">Forgot Password</a>
                                 </div>
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row" style="height:10%;">
                             <div class="col-md-8 offset-md-4">
-                                <button type="button" class="btn text-white" style="margin-right:auto; background-color:rgb(98, 8, 8);" onclick="location.href='{{ route('register') }}'">Register</button>
+                                <button type="button" class="btn text-white" style="margin-right:auto; background-color:rgb(98, 8, 8);" onclick="location.href='{{ route('register') }}'">Register Here</button>
                             </div>
                         </div>
                     </form>

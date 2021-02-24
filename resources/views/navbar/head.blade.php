@@ -2,7 +2,7 @@
 
 <nav class="">
   <div class="container-fluid navbar navbar-expand-lg navbar-dark" style="background-color: black;">
-    <a class="navbar-brand" style="width:20%; height:auto;" href="{{ url('/')}}">
+    <a class="navbar-brand" style="width:20%; height:auto;" href="{{ url('/select_lang')}}">
       <img src="/video/img_s/Logo_kari.png" alt="" width="80%" height="10%" class="d-inline-block align-top">
     </a>
     <div class="d-flex">

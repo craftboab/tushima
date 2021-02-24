@@ -40,20 +40,39 @@ class QuizController extends Controller
       // $user->count = true;
       // return view('/quiz', ['user' => $user]);
     }
-
-    public function quiz_1_correct()
+    public function quiz_en_correct_1()
     {
       $user = Auth::user();
       $user->count += 1;
       $user->save();
-      return view('/quiz/quiz_1_correct', compact('user'));
+      return view('/quiz/quiz1/quiz_en_correct_1', compact('user'));
     }
-
-    public function quiz_1_fail()
+    public function quiz_en_fail_1_0()
     {
       $user = Auth::user();
-      return view('/quiz/quiz_1_fail', compact('user'));
+      return view('/quiz/quiz1/quiz_en_fail_1_0', compact('user'));
     }
+    public function quiz_en_fail_1_1()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz1/quiz_en_fail_1_1', compact('user'));
+    }
+    public function quiz_en_fail_1_2()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz1/quiz_en_fail_1_2', compact('user'));
+    }
+    public function quiz_en_fail_1_3()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz1/quiz_en_fail_1_3', compact('user'));
+    }
+    public function quiz_en_fail_1_4()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz1/quiz_en_fail_1_4', compact('user'));
+    }
+
 
     public function quiz_2()
     {
@@ -61,17 +80,38 @@ class QuizController extends Controller
         return view('/quiz/quiz_2', compact('user'));
     }
 
-    public function quiz_2_correct()
+    public function quiz_en_correct_2()
     {
       $user = Auth::user();
       $user->count2 += 1;
       $user->save();
-      return view('/quiz/quiz_2_correct', compact('user'));
+      return view('/quiz/quiz2/quiz_en_correct_2', compact('user'));
     }
 
-    public function quiz_2_fail()
+    public function quiz_en_fail_2_0()
     {
-      return view('/quiz/quiz_2_fail');
+      $user = Auth::user();
+      return view('/quiz/quiz2/quiz_en_fail_2_0', compact('user'));
+    }
+    public function quiz_en_fail_2_1()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz2/quiz_en_fail_2_1', compact('user'));
+    }
+    public function quiz_en_fail_2_2()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz2/quiz_en_fail_2_2', compact('user'));
+    }
+    public function quiz_en_fail_2_3()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz2/quiz_en_fail_2_3', compact('user'));
+    }
+    public function quiz_en_fail_2_4()
+    {
+      $user = Auth::user();
+      return view('/quiz/quiz2/quiz_en_fail_2_4', compact('user'));
     }
 
     /**

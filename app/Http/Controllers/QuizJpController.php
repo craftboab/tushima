@@ -40,38 +40,72 @@ class QuizJpController extends Controller
       // $user->count = true;
       // return view('/quiz', ['user' => $user]);
     }
-
-    public function quiz_1_correct()
+    public function quiz_jp_correct_1()
     {
       $user = Auth::user();
       $user->count += 1;
       $user->save();
-      return view('/quiz_jp/quiz_1_correct', compact('user'));
+      return view('/quiz_jp/quiz_jp1/quiz_jp_correct_1', compact('user'));
     }
-
-    public function quiz_1_fail()
+    public function quiz_jp_fail_1_0()
     {
       $user = Auth::user();
-      return view('/quiz_jp/quiz_1_fail', compact('user'));
+      return view('/quiz_jp/quiz_jp1/quiz_jp_fail_1_0', compact('user'));
     }
+    public function quiz_jp_fail_1_1()
+    {
+      $user = Auth::user();
+      return view('/quiz_jp/quiz_jp1/quiz_jp_fail_1_1', compact('user'));
+    }
+    public function quiz_jp_fail_1_2()
+    {
+      $user = Auth::user();
+      return view('/quiz_jp/quiz_jp1/quiz_jp_fail_1_2', compact('user'));
+    }
+    public function quiz_jp_fail_1_3()
+    {
+      $user = Auth::user();
+      return view('/quiz_jp/quiz_jp1/quiz_jp_fail_1_3', compact('user'));
+    }
+    public function quiz_jp_fail_1_4()
+    {
+      $user = Auth::user();
+      return view('/quiz_jp/quiz_jp1/quiz_jp_fail_1_4', compact('user'));
+    }
+
+
 
     public function quiz_2()
     {
         $user = Auth::user();
         return view('/quiz_jp/quiz_2', compact('user'));
     }
-
-    public function quiz_2_correct()
+    public function quiz_jp_correct_2()
     {
       $user = Auth::user();
       $user->count2 += 1;
       $user->save();
-      return view('/quiz_jp/quiz_2_correct', compact('user'));
+      return view('/quiz_jp/quiz_jp2/quiz_jp_correct_2', compact('user'));
     }
-
-    public function quiz_2_fail()
+    public function quiz_jp_fail_2_0()
     {
-      return view('/quiz_jp/quiz_2_fail');
+      return view('/quiz_jp/quiz_jp2/quiz_jp_fail_2_0');
+    }
+    public function quiz_jp_fail_2_1()
+    {
+      return view('/quiz_jp/quiz_jp2/quiz_jp_fail_2_1');
+    }
+    public function quiz_jp_fail_2_2()
+    {
+      return view('/quiz_jp/quiz_jp2/quiz_jp_fail_2_2');
+    }
+    public function quiz_jp_fail_2_3()
+    {
+      return view('/quiz_jp/quiz_jp2/quiz_jp_fail_2_3');
+    }
+    public function quiz_jp_fail_2_4()
+    {
+      return view('/quiz_jp/quiz_jp2/quiz_jp_fail_2_4');
     }
 
     /**

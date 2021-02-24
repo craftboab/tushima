@@ -110,22 +110,46 @@ const judge = (elm) => {
 const $congrat = $doc.getElementById('congrat');
 
 function change_correct(){
-  $congrat.href = "/quiz_1_correct_jp";
+  $congrat.href = "/quiz_jp_correct_1";
   $congrat.textContent = "勝利";
 }
 
-function change_fail(){
-  $congrat.href = "/quiz_1_fail_jp";
+function change_fail0(){
+  $congrat.href = "/quiz_jp_fail_1_0";
+  $congrat.textContent = "敗北";
+}
+function change_fail1(){
+  $congrat.href = "/quiz_jp_fail_1_1";
+  $congrat.textContent = "敗北";
+}
+function change_fail2(){
+  $congrat.href = "/quiz_jp_fail_1_2";
+  $congrat.textContent = "敗北";
+}
+function change_fail3(){
+  $congrat.href = "/quiz_jp_fail_1_3";
+  $congrat.textContent = "敗北";
+}
+function change_fail4(){
+  $congrat.href = "/quiz_jp_fail_1_4";
   $congrat.textContent = "敗北";
 }
 
 const showEnd = () => {
   document.getElementById('result').textContent = 'あなたのスコアは  ' + score + '/' + quizLen + 'です';
   // judgement();
-  if(score > 4){
+  if(score === 5){
     change_correct();
-   }else{
-    change_fail();
+  }else if(score === 4){
+    change_fail4();
+  }else if(score === 3){
+    change_fail3();
+  }else if(score === 2){
+    change_fail2();
+  }else if(score === 1){
+    change_fail1();
+  }else if(score === 0){
+    change_fail0();
    }
   }
 
