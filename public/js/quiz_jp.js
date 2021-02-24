@@ -13,40 +13,40 @@ const quiz = [
   {
     count: 'video/quiz/Question_no1.png',
     // question: '岡田',
-    image: 'video/clip/Quiz1_1.mp4',
-    image_sub: 'video/clip/Question_01_sample.png',
+    image: 'video/quiz_clip/Question_01.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ '小茂田浜','久根浜','横浜'],
     correct: '小茂田浜'
   }, {
     count: 'video/quiz/Question_no2.png',
     // question: '野間',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_02.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'キツネ','馬','ヤマネコ'],
     correct: '馬'
   }, {
     count: 'video/quiz/Question_no3.png',
     // question: 'ラム',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_03.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: '',
     answers: [ '巴','典夫','文太'],
     correct: '文太'
   }, {
     count: 'video/quiz/Question_no4.png',
     // question: 'mario',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_04.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ '厳原八幡宮','北野八幡宮','大宰府八幡宮'],
     correct: '厳原八幡宮'
   }, {
     count: 'video/quiz/Question_no5.png',
     // question: 'lam',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_img.png',
+    image: 'video/quiz_clip/Question_05.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ '壱岐','対馬','五島'],
     correct: '壱岐'

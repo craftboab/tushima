@@ -13,40 +13,40 @@ const quiz = [
   {
     count: 'video/quiz/Question_no1.png',
     // question: '誉れを言った人気者',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_06.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'Kojiki','Nihonshoki','Manyoushu'],
     correct: 'Manyoushu'
   }, {
     count: 'video/quiz/Question_no2.png',
     // question: '１＋１＝',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_07.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'Semi','Hotaru','Kabutomushi'],
     correct: 'Semi'
   }, {
     count: 'video/quiz/Question_no3.png',
     // question: '２＋４＝',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_08.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'Harunobu Adachi','Hironori Nagao','Tokiyori Yarikawa'],
     correct: 'Harunobu Adachi'
   }, {
     count: 'video/quiz/Question_no4.png',
     // question: '５＋５＝',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_09.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C'],
     correct: 'A'
   }, {
     count: 'video/quiz/Question_no5.png',
     // question: '５＋５＝',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_10.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ '800m','2.2km','42.195km'],
     correct: '2.2km'

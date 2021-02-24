@@ -13,40 +13,40 @@ const quiz = [
   {
     count: 'video/quiz/Question_no1.png',
     // question: '岡田',
-    image: 'video/clip/Quiz1_1.mp4',
-    image_sub: 'video/clip/Question_01_sample.png',
+    image: 'video/quiz_clip/Question_01.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'Komodahama','Kunehama','Yokohama'],
     correct: 'Komodahama'
   }, {
     count: 'video/quiz/Question_no2.png',
     // question: '野間',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_02.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'Fox','Hource','Cat'],
     correct: 'Hource'
   }, {
     count: 'video/quiz/Question_no3.png',
     // question: 'ラム',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_03.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: '',
     answers: [ 'Tomoe','Norio','Bunta'],
     correct: 'Bunta'
   }, {
     count: 'video/quiz/Question_no4.png',
     // question: 'mario',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_sample.png',
+    image: 'video/quiz_clip/Question_04.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'IzuharaHachimangu','KitanoHachimangu','DazaifuHachimangu'],
     correct: 'IzuharaHachimangu'
   }, {
     count: 'video/quiz/Question_no5.png',
     // question: 'lam',
-    image: 'video/clip/Top_m_kari.mp4',
-    image_sub: 'video/clip/top_img.png',
+    image: 'video/quiz_clip/Question_05.mp4',
+    image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'Iki','Tushima','Gotou'],
     correct: 'Iki'
