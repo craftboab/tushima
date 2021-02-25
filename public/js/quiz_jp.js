@@ -40,7 +40,7 @@ const quiz = [
     image: 'video/quiz_clip/Question_04.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ '厳原八幡宮','北野八幡宮','大宰府八幡宮'],
+    answers: [ '北野八幡宮','厳原八幡宮','大宰府八幡宮'],
     correct: '厳原八幡宮'
   }, {
     count: 'video/quiz/Question_no5.png',

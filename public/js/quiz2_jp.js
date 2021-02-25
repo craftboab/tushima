@@ -24,8 +24,8 @@ const quiz = [
     image: 'video/quiz_clip/Question_07.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'コオロギ','ホタル','カブトムシ'],
-    correct: 'ホタル'
+    answers: [ 'コオロギ','蛍','カブトムシ'],
+    correct: '蛍'
   }, {
     count: 'video/quiz/Question_no3.png',
     // question: '２＋４＝',
@@ -41,7 +41,7 @@ const quiz = [
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C'],
-    correct: 'A'
+    correct: 'B'
   }, {
     count: 'video/quiz/Question_no5.png',
     // question: '５＋５＝',
