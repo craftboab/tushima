@@ -29,6 +29,7 @@
                 </div>
 
                 <button class="btn btn-secondary blue-gradient mt-2 mb-2" type="submit">Send</button>
+                <button type="button" class="btn btn-secondary blue-gradient mt-2 ml-2 mb-2" style="" onclick="location.href='/login'">Back</button>
                 <!-- <button class="btn btn-primary" onclick="window.history.back()">Back</button> -->
               </form>
 

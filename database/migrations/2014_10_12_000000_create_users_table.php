@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('country');
             $table->boolean('count');
             $table->boolean('count2');
+            $table->boolean('user_check');
             $table->rememberToken();
             $table->timestamps();
         });

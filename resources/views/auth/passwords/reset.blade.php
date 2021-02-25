@@ -31,6 +31,7 @@
                 </div>
 
                 <button class="btn btn-secondary blue-gradient mt-2 mb-2" type="submit">Done</button>
+                <button type="button" class="btn btn-secondary blue-gradient mt-2 ml-2 mb-2" style="" onclick="location.href='/login'">Back</button>
 
               </form>
 
