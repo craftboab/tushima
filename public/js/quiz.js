@@ -40,8 +40,8 @@ const quiz = [
     image: 'video/quiz_clip/Question_04.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'KitanoHachimangu','IzuharaHachimangu','DazaifuHachimangu'],
-    correct: 'IzuharaHachimangu'
+    answers: [ 'A','B','C'],
+    correct: 'B'
   }, {
     count: 'video/quiz/Question_no5.png',
     // question: 'lam',

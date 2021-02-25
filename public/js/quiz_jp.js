@@ -32,7 +32,7 @@ const quiz = [
     image: 'video/quiz_clip/Question_03.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: '',
-    answers: [ '巴','典夫','文太'],
+    answers: [ '巴','典雄','文太'],
     correct: '文太'
   }, {
     count: 'video/quiz/Question_no4.png',
@@ -40,8 +40,8 @@ const quiz = [
     image: 'video/quiz_clip/Question_04.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ '北野八幡宮','厳原八幡宮','大宰府八幡宮'],
-    correct: '厳原八幡宮'
+    answers: [ 'A','B','C'],
+    correct: 'B'
   }, {
     count: 'video/quiz/Question_no5.png',
     // question: 'lam',
