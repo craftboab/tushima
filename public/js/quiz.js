@@ -24,7 +24,7 @@ const quiz = [
     image: 'video/quiz_clip/Question_02.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
-    answers: [ 'Fox','Hource','Cat'],
+    answers: [ 'Fox','Horce','Cat'],
     correct: 'Hource'
   }, {
     count: 'video/quiz/Question_no3.png',
