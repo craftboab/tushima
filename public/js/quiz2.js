@@ -11,7 +11,7 @@ let popup_timeover = document.getElementById('js-popup1');
 
 const quiz = [
   {
-    count: 'video/quiz/Question_no1.png',
+    count: 'video/quiz/Question_no6.png',
     // question: '誉れを言った人気者',
     image: 'video/quiz_clip/Question_06.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
@@ -19,7 +19,7 @@ const quiz = [
     answers: [ 'Kojiki','Nihonshoki','Manyoushu'],
     correct: 'Manyoushu'
   }, {
-    count: 'video/quiz/Question_no2.png',
+    count: 'video/quiz/Question_no7.png',
     // question: '１＋１＝',
     image: 'video/quiz_clip/Question_07.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
@@ -27,7 +27,7 @@ const quiz = [
     answers: [ 'Cricket','Firefly','Beatle'],
     correct: 'Firefly'
   }, {
-    count: 'video/quiz/Question_no3.png',
+    count: 'video/quiz/Question_no8.png',
     // question: '２＋４＝',
     image: 'video/quiz_clip/Question_08.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
@@ -35,7 +35,7 @@ const quiz = [
     answers: [ 'Harunobu Adachi','Hironori Nagao','Tokiyori Yarikawa'],
     correct: 'Harunobu Adachi'
   }, {
-    count: 'video/quiz/Question_no4.png',
+    count: 'video/quiz/Question_no9.png',
     // question: '５＋５＝',
     image: 'video/quiz_clip/Question_09.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
@@ -43,7 +43,7 @@ const quiz = [
     answers: [ 'A','B','C'],
     correct: 'B'
   }, {
-    count: 'video/quiz/Question_no5.png',
+    count: 'video/quiz/Question_no10.png',
     // question: '５＋５＝',
     image: 'video/quiz_clip/Question_10.mp4',
     image_sub: 'video/quiz_clip/Question_01_sample.png',
