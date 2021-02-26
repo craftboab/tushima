@@ -10,6 +10,31 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+/*
+|--------------------------------------------------------------------------
+| 3) Admin 認証不要
+|--------------------------------------------------------------------------
+*/
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('/',         function () { return redirect('/admin/home'); });
+    Route::get('login',     'Admin\LoginController@showLoginForm')->name('admin.login');
+    Route::post('login',    'Admin\LoginController@login');
+});
+
+/*
+|--------------------------------------------------------------------------
+| 4) Admin ログイン後
+|--------------------------------------------------------------------------
+*/
+Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
+    Route::post('logout',   'Admin\LoginController@logout')->name('admin.logout');
+    Route::get('home',      'Admin\HomeController@index')->name('admin.home');
+
+    Route::get('list', 'Admin\AdminUsersController@list');
+    Route::post('list_update', 'Admin\AdminUsersController@update');
+    Route::get('done', 'Admin\AdminUsersController@done');
+    Route::get('all', 'Admin\AdminUsersController@all');
+});
 
 Auth::routes();
 
@@ -73,25 +98,4 @@ Route::group(['middleware' => 'auth:user'], function() {
     //   return view('special'); });
     // Route::get('/about', function(){
     //   return view('about'); });
-});
-
-/*
-|--------------------------------------------------------------------------
-| 3) Admin 認証不要
-|--------------------------------------------------------------------------
-*/
-Route::group(['prefix' => 'admin'], function() {
-    Route::get('/',         function () { return redirect('/admin/home'); });
-    Route::get('login',     'Admin\LoginController@showLoginForm')->name('admin.login');
-    Route::post('login',    'Admin\LoginController@login');
-});
-
-/*
-|--------------------------------------------------------------------------
-| 4) Admin ログイン後
-|--------------------------------------------------------------------------
-*/
-Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
-    Route::post('logout',   'Admin\LoginController@logout')->name('admin.logout');
-    Route::get('home',      'Admin\HomeController@index')->name('admin.home');
 });

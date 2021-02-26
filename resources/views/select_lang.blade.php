@@ -4,7 +4,7 @@
 @section('content')
 
 
-  <div class="container-fluid navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <div class="container navbar navbar-expand-lg navbar-dark" style="background-color: black;">
 
       <div class="collapse navbar-collapse justify-content-end ml-5" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto m-2 mb-lg-0">

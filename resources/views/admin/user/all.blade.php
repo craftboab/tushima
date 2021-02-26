@@ -14,9 +14,9 @@
                         </div>
                     @endif
 
-                    <button type="button" class="btn btn-secondary mr-2" onclick="location.href='/admin/list'">List</button>
-                    <!-- <button type="button" class="btn btn-secondary mx-2" onclick="location.href='/admin/done'">Done</button>
-                    <button type="button" class="btn btn-secondary ml-2" onclick="location.href='/admin/all'">All</button> -->
+                    <button type="button" class="btn btn-secondary mr-2" onclick="location.href='/admin/list'">Update</button>
+                    <button type="button" class="btn btn-secondary mx-2" onclick="location.href='/admin/done'">Done</button>
+                    <button type="button" class="btn btn-secondary ml-2" onclick="location.href='/admin/all'">All</button>
                 </div>
             </div>
         </div>
