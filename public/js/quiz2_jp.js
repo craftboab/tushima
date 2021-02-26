@@ -41,7 +41,7 @@ const quiz = [
     image_sub: 'video/quiz_clip/Question_01_sample.png',
     image_alt: 'quiz_image',
     answers: [ 'A','B','C'],
-    correct: 'B'
+    correct: 'C'
   }, {
     count: 'video/quiz/Question_no10.png',
     // question: '５＋５＝',

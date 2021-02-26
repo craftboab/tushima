@@ -31,6 +31,7 @@
           <div class="">
             <li style="width:auto; margin-right:10%;">{{ $user->address }}</li>
             <li>{{ $user->country }}</li>
+            <li>{{ $user->created_at }}</li>
           </div>
         </ul>
 
