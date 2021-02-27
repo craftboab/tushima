@@ -8,6 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link rel="shortcut icon" href="{{ asset('/video/img_s/SP_Logo_only_02.png') }}">
     <title>GORT Real Tsushima Battle</title>
 
 
