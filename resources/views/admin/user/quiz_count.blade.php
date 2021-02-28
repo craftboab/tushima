@@ -29,9 +29,10 @@
             <li>{{ $user->email }}</li>
           </div>
           <div class="">
-            <li style="width:auto; margin-right:10%;">{{ $user->address }}</li>
-            <li>{{ $user->country }}</li>
-            <li>{{ $user->created_at }}</li>
+            <!-- <li style="width:auto; margin-right:10%;">{{ $user->address }}</li> -->
+
+            <li>Quiz1: {{ $user->count }}</li>
+            <li>Quiz2: {{ $user->count2 }}</li>
           </div>
         </ul>
 

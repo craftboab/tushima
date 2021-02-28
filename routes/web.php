@@ -31,6 +31,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
     Route::get('home',      'Admin\HomeController@index')->name('admin.home');
 
     Route::get('list', 'Admin\AdminUsersController@list');
+    Route::get('reward', 'Admin\AdminUsersController@reward');
+    Route::get('quiz_count', 'Admin\AdminUsersController@quiz_count');
     Route::post('list_update', 'Admin\AdminUsersController@update');
     Route::get('done', 'Admin\AdminUsersController@done');
     Route::get('all', 'Admin\AdminUsersController@all');

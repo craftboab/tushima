@@ -35,6 +35,18 @@ class AdminUsersController extends Controller
       return view('admin/user/list', compact('users'));
     }
 
+    public function reward()
+    {
+      $users = User::paginate(50);
+      return view('admin/user/reward', compact('users'));
+    }
+
+    public function quiz_count()
+    {
+      $users = User::paginate(50);
+      return view('admin/user/quiz_count', compact('users'));
+    }
+
     // public function update(Request $request)
     // {
     //
